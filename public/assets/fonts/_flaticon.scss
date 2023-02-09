@@ -1,0 +1,130 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 13/04/2020 09:41
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-art:before { content: "\f100"; }
+.flaticon-apps:before { content: "\f101"; }
+.flaticon-address:before { content: "\f102"; }
+.flaticon-alarm:before { content: "\f103"; }
+.flaticon-speech-bubble:before { content: "\f104"; }
+.flaticon-camera:before { content: "\f105"; }
+.flaticon-loupe:before { content: "\f106"; }
+.flaticon-frame:before { content: "\f107"; }
+.flaticon-camera-1:before { content: "\f108"; }
+.flaticon-clock:before { content: "\f109"; }
+.flaticon-smartwatch:before { content: "\f10a"; }
+.flaticon-smart-watch:before { content: "\f10b"; }
+.flaticon-smart-watch-1:before { content: "\f10c"; }
+.flaticon-smartwatch-1:before { content: "\f10d"; }
+.flaticon-smartband:before { content: "\f10e"; }
+.flaticon-smartwatch-2:before { content: "\f10f"; }
+.flaticon-wathc:before { content: "\f110"; }
+.flaticon-watch:before { content: "\f111"; }
+.flaticon-wifi:before { content: "\f112"; }
+.flaticon-heart:before { content: "\f113"; }
+.flaticon-location:before { content: "\f114"; }
+.flaticon-bluetooth:before { content: "\f115"; }
+.flaticon-cloudy:before { content: "\f116"; }
+.flaticon-sun:before { content: "\f117"; }
+.flaticon-moon:before { content: "\f118"; }
+.flaticon-video-call:before { content: "\f119"; }
+.flaticon-guarantee:before { content: "\f11a"; }
+.flaticon-delivery-truck:before { content: "\f11b"; }
+.flaticon-save-money:before { content: "\f11c"; }
+.flaticon-return:before { content: "\f11d"; }
+.flaticon-support:before { content: "\f11e"; }
+.flaticon-technical-support:before { content: "\f11f"; }
+.flaticon-social-care:before { content: "\f120"; }
+.flaticon-support-1:before { content: "\f121"; }
+.flaticon-support-2:before { content: "\f122"; }
+.flaticon-drone:before { content: "\f123"; }
+.flaticon-drone-1:before { content: "\f124"; }
+.flaticon-propeller:before { content: "\f125"; }
+.flaticon-controller:before { content: "\f126"; }
+.flaticon-battery:before { content: "\f127"; }
+.flaticon-console:before { content: "\f128"; }
+.flaticon-panoramic:before { content: "\f129"; }
+.flaticon-selfie:before { content: "\f12a"; }
+.flaticon-tower:before { content: "\f12b"; }
+.flaticon-processor:before { content: "\f12c"; }
+    
+    $font-Flaticon-art: "\f100";
+    $font-Flaticon-apps: "\f101";
+    $font-Flaticon-address: "\f102";
+    $font-Flaticon-alarm: "\f103";
+    $font-Flaticon-speech-bubble: "\f104";
+    $font-Flaticon-camera: "\f105";
+    $font-Flaticon-loupe: "\f106";
+    $font-Flaticon-frame: "\f107";
+    $font-Flaticon-camera-1: "\f108";
+    $font-Flaticon-clock: "\f109";
+    $font-Flaticon-smartwatch: "\f10a";
+    $font-Flaticon-smart-watch: "\f10b";
+    $font-Flaticon-smart-watch-1: "\f10c";
+    $font-Flaticon-smartwatch-1: "\f10d";
+    $font-Flaticon-smartband: "\f10e";
+    $font-Flaticon-smartwatch-2: "\f10f";
+    $font-Flaticon-wathc: "\f110";
+    $font-Flaticon-watch: "\f111";
+    $font-Flaticon-wifi: "\f112";
+    $font-Flaticon-heart: "\f113";
+    $font-Flaticon-location: "\f114";
+    $font-Flaticon-bluetooth: "\f115";
+    $font-Flaticon-cloudy: "\f116";
+    $font-Flaticon-sun: "\f117";
+    $font-Flaticon-moon: "\f118";
+    $font-Flaticon-video-call: "\f119";
+    $font-Flaticon-guarantee: "\f11a";
+    $font-Flaticon-delivery-truck: "\f11b";
+    $font-Flaticon-save-money: "\f11c";
+    $font-Flaticon-return: "\f11d";
+    $font-Flaticon-support: "\f11e";
+    $font-Flaticon-technical-support: "\f11f";
+    $font-Flaticon-social-care: "\f120";
+    $font-Flaticon-support-1: "\f121";
+    $font-Flaticon-support-2: "\f122";
+    $font-Flaticon-drone: "\f123";
+    $font-Flaticon-drone-1: "\f124";
+    $font-Flaticon-propeller: "\f125";
+    $font-Flaticon-controller: "\f126";
+    $font-Flaticon-battery: "\f127";
+    $font-Flaticon-console: "\f128";
+    $font-Flaticon-panoramic: "\f129";
+    $font-Flaticon-selfie: "\f12a";
+    $font-Flaticon-tower: "\f12b";
+    $font-Flaticon-processor: "\f12c";

@@ -1,0 +1,67 @@
+/*---------------------------
+** About Area Start
+---------------------------*/
+
+.about {
+  padding: 110px 0px 120px; 
+   position: relative;
+  .left-shape2{
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    top: 200px;
+    z-index: -9;
+  }
+  .box{
+    text-align: center;
+    background: #F7F9FF;
+    overflow: hidden;
+    position: relative;
+    transition: $transition;
+    &::after{
+      position: absolute;
+      content: "";
+      bottom: 0px;
+      left: 0px;
+      height: 4px;
+      width: 0%;
+      @include main-gradint1;
+      transition: $transition;
+
+    }
+    .inner-box{
+      width: 100%;
+      position: relative;
+      z-index: 99;
+      padding: 27px 25px 35px;
+      @include transition;
+      .icon{
+        font-size: 55px;
+        i{
+          @include gradient-text1;
+          transition: $transition;
+        }
+      }
+      .title{
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 600;
+        color: $dark-color;
+        margin: 9px 0px 22px;
+        transition: $transition;
+      }
+      .text{
+        margin-bottom: 0px;
+        transition: $transition;
+      }
+    }
+    &:hover{
+      transform: translateY(-5px)!important;
+      box-shadow: 0px 20px 20px 2px rgba(0, 0, 0, 0.10);
+      &::after{
+        width: 100%;
+      }
+    }
+  }
+
+}

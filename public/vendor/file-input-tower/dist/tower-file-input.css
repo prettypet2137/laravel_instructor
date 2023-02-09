@@ -1,0 +1,52 @@
+.tower-file input[type="file"] {
+  height: 0.1px;
+  width: 0.1px;
+  opacity: 0; }
+
+.tower-file label {
+  margin-bottom: 0; }
+
+.tower-file label, .tower-file .tower-file-clear:not(:disabled) {
+  cursor: pointer; }
+
+.tower-file .tower-file-button {
+  background: white;
+  border: 1px solid #ccc;
+  padding: .2rem .5rem;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  user-select: none;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
+  .tower-file .tower-file-button:hover:not(:disabled) {
+    cursor: pointer;
+    background: #f2f2f2;
+    border-color: #b8b8b8; }
+
+.tower-file .tower-file-details {
+  position: relative;
+  border-radius: .25rem;
+  margin-top: 0.5rem; }
+  .tower-file .tower-file-details .tower-file-list, .tower-file .tower-file-details .tower-input-preview-container {
+    border: 1px solid #ddd;
+    display: inline-block; }
+  .tower-file .tower-file-details .tower-file-list {
+    padding: .375rem .75rem .375rem 2.5rem; }
+  .tower-file .tower-file-details .tower-input-preview-container {
+    padding: .375rem; }
+  .tower-file .tower-file-details img {
+    max-width: 100%; }
+  .tower-file .tower-file-details:before, .tower-file .tower-file-details:after {
+    content: '';
+    position: absolute;
+    left: 2rem;
+    height: 0;
+    width: 0; }
+  .tower-file .tower-file-details:before {
+    top: -0.6rem;
+    border: 5px solid transparent;
+    border-bottom-color: #ddd; }
+  .tower-file .tower-file-details:after {
+    top: calc(-0.6rem + 1px);
+    border: 5px solid transparent;
+    border-bottom-color: white; }

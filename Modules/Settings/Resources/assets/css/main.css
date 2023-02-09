@@ -1,0 +1,59 @@
+#main{
+        width: 100%;
+        height: 100%;
+}
+
+.CodeMirror {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+}
+#info{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: green;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    padding: auto;
+    box-shadow: 2px 2px 3px #999;
+}
+.top-float{
+    font-size: 1.5em;
+    margin-top:18px;
+}
+@media screen and (max-width: 800px) {
+    #info{
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .top-float{
+        font-size: 1.2em;
+        margin-top: 15px;
+        
+    }
+    #output {
+        top: 50%;
+        display: block;
+        left:0;
+        width: 100%;
+        height: 50%;
+    }
+    #result{
+        width: 100vw;
+        height: 50vh;
+    }
+    .CodeMirror{
+        height: 50%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,688 @@
+﻿/* Template "bootstrap" for iGuider plugin. */
+
+.gHead {
+	padding:16px;
+	border-bottom: 1px solid #e9ecef;
+}
+
+
+.g-modal-size {
+	color:#212529;
+	width:500px;
+	max-width:calc(100vw - 10px) !important;
+	background: #fff;
+	box-shadow:0 0 20px -10px rgba(0,0,0,0.1);
+	border-radius:3px;
+	overflow:hidden;
+	
+	display: -webkit-box  !important;
+	display: -moz-box  !important;
+	display: -ms-flexbox  !important;
+	display: -webkit-flex  !important;
+	display: flex  !important;
+	
+	-webkit-box-orient:vertical;
+	-webkit-box-direction: normal;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.gWidget {
+	overflow:hidden;
+	
+	display: -webkit-box  !important;
+	display: -moz-box  !important;
+	display: -ms-flexbox  !important;
+	display: -webkit-flex  !important;
+	display: flex  !important;
+	
+	-webkit-box-orient:vertical;
+	-webkit-box-direction: normal;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.gScroll {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive:1;
+	flex-grow: 1;
+	line-height:0;
+}
+
+.g-modal-pos {
+	color:#fff;
+	
+}
+.g-modal-pos:after {
+	border-width:10px;
+	border-style:solid;
+	z-index: 8;
+}
+.gAction {
+	padding:0;
+	margin:-16px 0;
+	height:32px;
+	overflow:hidden;
+	position:relative;
+	z-index:
+	-webkit-box-flex: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative:0;
+	flex-shrink: 0;
+	z-index:100;
+}
+.gAction .gBtn {
+	min-width:36px;
+	letter-spacing:0;
+}
+.gHeader {
+	position:relative;
+	margin-top: 0;
+	padding:0;
+	word-wrap: break-word;
+	margin-bottom: 0;
+    line-height: 1.5em;
+	font-size: 20px;
+	font-family: inherit;
+    font-weight: 500;
+	color:#000;
+	overflow:hidden;
+}
+.gContent {
+	font:400 16px/1.5em Arial, Helvetica, sans-serif;
+	padding:16px;
+	margin-top:0;
+}
+.g-modal-body {
+	position:relative;
+	top:-3px;
+}
+
+/*timer*/
+.gTimer {
+	position:absolute;
+	left:0px;
+	right:0px;
+	line-height:0;
+	transition:0.3s all;
+	direction: ltr !important;
+}
+.g-modal-timer-line .gTimer {
+	top:15px;
+	height:1px;
+	background:rgba(128,128,128,0.1);
+}
+.g-modal-timer-circle .gTimer {
+	top:8px;
+	height:34px;
+}
+.g-progress {
+	width:34px;
+	height:34px;
+}
+.g-modal-timer-line .g-modal-timer {
+	height:3px;
+	left:0;
+	top:-1px;
+}
+
+.g-modal-timer-circle .g-modal-timer {
+	position:absolute;
+	top:0;
+	left:50%;
+	transform:translateX(-50%);
+}
+.g-progress__meter {
+	stroke: rgba(128,128,128,0.1);
+	transition:0.3s all;
+}
+
+.g-modal-timer-line .g-modal-timer {
+	background: #007bff;
+}
+.g-progress__value {
+	stroke: #00a2ff;
+}
+
+
+
+
+.g-timer-controll {
+	display:inline-block;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transition:0.3s all;
+	transform:translate(-50%, -50%);
+	direction: ltr !important;
+	color:rgba(0,0,0,0.5) !important;
+	background:#fff !important;
+}
+.g-modal-timer-line .g-timer-controll,
+.g-modal-timer-line .g-timer-controll:hover {
+	color:rgba(0,0,0,1) !important;
+	opacity:0;
+	transform:translate(-50%, -50%) scale(0);
+}
+.g-modal-timer-circle .g-timer-controll,
+.g-modal-timer-circle .g-timer-controll:hover {
+	background:none;
+}
+.g-modal-timer-line.g-timer-progress-show .g-timer-controll {
+	opacity:0;
+	transform:translate(-50%, -50%) scale(0);
+}
+.g-modal-timer-line.g-timer-progress-hide .g-timer-controll {
+	opacity:1;
+	transform:translate(-50%, -50%) scale(1);
+}
+.g-timer-play:after {
+	content: '';
+    width: 8px;
+    height: 8px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+    transform: rotate(45deg);
+    top: -1px;
+    left: -2px;
+    border-radius: 2px;
+}
+.g-timer-play:before {
+	content: '';
+    width: 0;
+    height: 10px;
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 2px;
+    border-radius: 2px 0 0 2px;
+}
+.g-timer-pause:after {
+	content: '';
+    width: 6px;
+    height: 10px;
+    border-width: 0 2px;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+}
+
+.g-modal-timer-line .g-timer-controll.g-timer-play {
+	opacity:1;
+	transform:translate(-50%, -50%) scale(1);
+}
+.g-state-pause .g-progress__meter {
+	stroke: rgba(128,128,128,0);
+}
+.g-state-pause.g-modal-timer-line .gTimer {
+	background:rgba(128,128,128,0.1);
+}
+
+
+
+
+
+.gFooter {
+	position:relative;
+	overflow:hidden;
+	padding:16px;
+	text-align:right;
+	border-top: 1px solid #e9ecef;
+	-webkit-box-flex: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative:0;
+	flex-shrink: 0;
+	margin-top:-1px;
+}
+
+
+
+.gPage {
+	white-space:nowrap;
+	font:400 14px/36px arial;
+	display:block;
+	position:relative;
+	z-index:99;
+	float:left;
+	color:rgba(0,0,0,0.4);	
+}
+
+
+.g-map-pos .gPage:after {
+	content:'';
+	border-top:1px solid rgba(128,128,128,0.2);
+	position:absolute;
+	top:100%;
+	left:0;
+	width:100%;
+	height:0;
+}
+
+.gPageVal {
+	display:inline-block; 
+	vertical-align:top;
+}
+.gPageTotal {
+	display:inline-block; 
+	vertical-align:top;
+}
+.g-modal-step-total:before {
+	content:'/ ';
+	padding-left:3px;
+}
+
+.g-step-item.g-el-absent {
+	color:#f00
+}
+
+.gBtn {
+	background: #007bff;
+    border: medium none;
+    border-radius: 4px;
+    
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 36px;
+    letter-spacing: 0;
+    line-height: 36px;
+    margin: 0;
+    outline: medium none;
+    overflow: hidden;
+    padding: 0 12px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+	transition: 0.3s all;
+    vertical-align: middle;
+    will-change: box-shadow;
+}
+
+.g-map-pos .gBtn,
+.g-modal-pos .gBtn {
+	color: #fff;
+}
+.g-map-pos .gBtn:hover,
+.g-modal-pos .gBtn:hover  {
+	background:#0069d9;
+	color:#fff;
+	opacity:1
+}
+.g-step-item:not(.hCur):hover {
+	color:#000;
+	opacity:1
+}
+
+
+.g-step-item:before{
+	font:11px/1.2em arial;
+	color:#b8b8b8;
+	display:block;
+	padding-top:20px;
+	padding-left:25px;
+	padding-right:20px;
+	position:absolute;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+	z-index:-1;
+	transition:0.3s all;
+	counter-increment: section;
+	content: counter(section, decimal-leading-zero);
+}
+.rtl .g-step-item:before  {
+	padding-right:85px;
+}
+
+
+
+
+.gBtn:active,
+.gBtn.active {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.gFooter .gBtn {
+
+}
+.gFooter .gBtn + .gBtn {
+	margin-left:8px;
+}
+
+.g-modal-pos ul {
+	list-style-position:inside;
+	margin:10px 0;
+	padding:0;
+	
+}
+
+
+
+
+
+
+.g-map-pos {
+	top:50px;
+	bottom:50px;
+	max-width:calc(100vw - 20px);
+	width:300px;
+	background: #fff;
+	color:#333;
+	overflow:visible;
+	box-shadow:-20px 20px 20px -10px rgba(0,0,0,0.1);
+	
+	display: -webkit-box  !important;
+	display: -moz-box  !important;
+	display: -ms-flexbox  !important;
+	display: -webkit-flex  !important;
+	display: flex  !important;
+	
+	-webkit-box-orient:vertical;
+	-webkit-box-direction: normal;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+
+
+.gMapHeader {
+    padding: 0 25px 15px;
+	-webkit-box-flex: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative:0;
+	flex-shrink: 0;
+	position:relative;
+}
+.g-map-header {
+	font: 400 20px/1.5em arial;
+}
+.g-map-pos-left {
+	box-shadow:20px 20px 20px -10px rgba(0,0,0,0.1);
+}
+
+.gMapContent {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+	padding:0 0 20px 0px;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive:1;
+	flex-grow: 1;
+	counter-reset: section;
+}
+
+
+
+
+.gMapBufer {
+	height:40px;
+	position:relative;
+	-webkit-box-flex: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative:0;
+	flex-shrink: 0;
+}
+.gMapBufer:before {
+	content:'';
+	position:absolute;
+	right:0;
+	bottom:100%;
+	height:0;
+	width:calc(100% - 50px);
+	z-index:99;
+	
+}
+
+.g-step-item{
+	color: #777;
+    flex-flow: row nowrap;
+    font-family: "Arial",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.2em;
+    padding: 34px 85px 17px 25px;
+	cursor:pointer;
+	width:100%;
+	clear:both;
+	position:relative;
+	display:block;
+		
+}
+.g-step-item-text {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	display:block;
+}
+.g-step-item:after{
+	content:'';
+	position:absolute;
+	top:50%;
+	right:25px;
+	width:15px;
+	height:8px;
+	font-size:0;
+	line-height:0;
+	transform-origin:right bottom;
+	transform:rotate(-45deg);
+	margin-top:-9px;
+	
+	border:3px solid rgba(0,0,0,0.1);
+	border-width:0 0 3px 3px;
+}
+.g-step-item.g-step-success:after {
+	border-color:#007bff;
+}
+
+.g-step-item.hCur:before {
+	background-color:#f5f5f5;
+}
+.g-step-item.hCur {
+	cursor:default;
+}
+
+
+.g-map-no-clickable .g-step-item:hover:not(.hCur) {
+	background:none;
+}
+.gMapAction {
+	padding:8px 12px 24px;
+	position:relative;
+	flex-shrink:0;
+}
+.gMapAction .gBtn {
+	display:inline-block;
+}
+.g-modal-close-tour {
+	float:right;
+}
+
+.g-modal-map {
+	background: none;
+	float:left;
+	position:relative;
+	color: rgba(0,0,0,0.5);
+	font-size: 28px;
+	line-height: 36px;
+	padding: 16px;
+	margin: -16px auto -16px -16px;
+}
+.rtl .g-modal-map {
+	float:right;
+	margin: -16px -16px -16px auto;
+}
+.gBtnGroup {
+	overflow:hidden;
+}
+.g-modal-close-tour {
+	background: none;
+	height:auto;
+	font-size: 28px;
+	line-height: 28px;
+	padding: 16px;
+    margin: -16px -16px -16px auto;
+	color: rgba(0,0,0,0.5);
+}
+.g-modal-close-tour:hover,
+.g-modal-map:hover {
+	color: rgba(0,0,0,1);
+	background: none ;
+}
+
+.g-modal-type {
+	float:left;
+	display:block;
+	font:14px/36px arial;
+	color:rgba(0,0,0,0.4);
+}
+.rtl .g-modal-type {
+	float:right;
+}
+
+.g-modal-cover {
+	position:relative;
+	top:0;
+	left:0;
+}
+.g-map-pos-left .g-map-hide {
+	float:left;
+	transform:rotate(180deg)
+}
+.g-map-pos-left .g-map-toggle {
+	float:right;
+	transform:rotate(0)
+}
+
+.g-map-hide {
+	line-height:0;
+	font-size:0;
+	width:36px;
+	height:36px;
+	text-align:center;
+	float:right;
+	position:relative;
+	color:rgba(0,0,0,0.5);
+	cursor:pointer;
+}
+.g-map-hide:before,
+.g-map-hide:after {
+	content:'';
+	position:absolute;
+	border-style:solid;
+	top:17px;
+	left:9px;
+}
+.g-map-hide:before {
+	border-width:2px 0 0 0;
+	height:0;
+}
+.g-map-hide:after {
+	width:8px;
+	height:8px;
+	border-width:0 2px 2px 0;
+	transform:rotate(-45deg) translate(4px, 0);
+}
+
+.g-map-toggle {
+	line-height:0;
+	font-size:0;
+	width:36px;
+	height:36px;
+	text-align:center;
+	float:left;
+	position:relative;
+	transform:rotate(180deg);
+	color:rgba(0,0,0,0.5);
+	cursor:pointer;
+}
+.g-map-toggle:hover,
+.g-map-hide:hover {
+	color:rgba(0,0,0,1);
+}
+.g-map-toggle:before,
+.g-map-toggle:after {
+	content:'';
+	position:absolute;
+	border-style:solid;
+	top:17px;
+	left:9px;
+}
+.g-map-toggle:before {
+	border-width:2px 0 0 0;
+	height:0;
+}
+.g-map-toggle:after {
+	width:8px;
+	height:8px;
+	border-width:0 2px 2px 0;
+	transform:rotate(-45deg) translate(4px, 0);
+}
+
+.g-modal-prev,
+.g-modal-close-intro,
+.g-modal-begin-first {
+	opacity:0.4 ;
+}
+.g-map-pos .gPage {
+	padding-top:0;
+	padding-left:25px;
+	padding-right:25px;
+	padding-bottom:20px;
+}
+
+/*rtl direction*/
+.rtl .gFooter {
+	text-align:left;
+}
+.rtl .gPage {
+	float:right;
+}
+.rtl .g-modal-map {
+	float:right;
+}
+.rtl .g-modal-close-tour {
+	float:left;
+}
+.rtl .gFooter .gBtn + .gBtn {
+	margin-right: 8px;
+	margin-left:0;
+}
+.rtl.g-map-pos .gPage {
+	text-align:right;
+}

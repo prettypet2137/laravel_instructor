@@ -1,0 +1,76 @@
+﻿.tower-file {
+    input[type="file"] {
+        height: 0.1px;
+        width: 0.1px;
+        opacity: 0;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+
+    label, .tower-file-clear:not(:disabled) {
+        cursor: pointer;
+    }
+
+    .tower-file-button {
+        background: white;
+        border: 1px solid #ccc;
+        padding: .2rem .5rem;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.5;
+        user-select: none;
+        transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+
+        &:hover:not(:disabled) {
+            cursor: pointer;
+            background: darken(white, 5);
+            border-color: darken(#ccc, 8);
+        }
+    }
+
+    .tower-file-details {
+        position: relative;
+        border-radius: .25rem;
+        margin-top: 0.5rem;
+
+        .tower-file-list, .tower-input-preview-container {
+            border: 1px solid #ddd;
+            display: inline-block;
+        }
+
+        .tower-file-list {
+            padding: .375rem .75rem .375rem 2.5rem;
+        }
+
+        .tower-input-preview-container {
+            padding: .375rem;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        // Arrow
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            left: 2rem;
+            height: 0;
+            width: 0;
+        }
+
+        &:before {
+            top: -0.6rem;
+            border: 5px solid transparent;
+            border-bottom-color: #ddd;
+        }
+
+        &:after {
+            top: calc(-0.6rem + 1px);
+            border: 5px solid transparent;
+            border-bottom-color: white;
+        }
+    }
+}

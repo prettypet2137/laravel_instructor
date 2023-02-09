@@ -1,0 +1,207 @@
+body {
+    color: #dbe2fb;
+    background: #001232;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.compare-section .compare-table tbody th,
+.compare-section .compare-table thead .product-title,
+.section-title .title,
+.testimonial-area .testimonial-slider .client .client-name a,
+.faq .accordion .panel-title,
+.feature .feature-box .details .title,
+.whaybest .info .info-title,
+.about .box .inner-box .title,
+.navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link
+{
+    color: #ffff;
+}
+
+p,
+span,
+a,
+i,
+.compare-section .compare-table thead .product-subtitle,
+.section-title p,
+.testimonial-area .testimonial-slider .client .designation,
+.dealofweek .deal-slider-area .content .right-area .price del
+{
+    color: #dbe2fb;
+}
+
+.curve:after, .curve:before 
+{
+    border-bottom: 80px solid #001232;
+}
+.curve.curve-top:after, .curve.curve-top:before {
+    border-top: 80px solid #001232;
+}
+.index2 .hero-area .curve:after, .index2 .hero-area .curve:before {
+    border-bottom: 300px solid #001232;
+}
+
+.preloader-inner,
+.home5 .preloader-inner,
+.home7 .preloader-inner
+{
+    background: #001232;
+    background-color: #001232;
+    background-image: #001232;
+}
+/* .pricing .product-slider .item .single-product .img{
+    background:#001232 ;
+} */
+
+.whaybest,
+.dealofweek,
+.video,
+.testimonial-area,
+.faq,
+.home5 .hero-area::before,
+.home5 .whaybest::before,
+.home5 .dealofweek::before,
+.home5 .video::before,
+.home5 .testimonial-area::before,
+.home5 .faq::before,
+.home5 .footer,
+
+.home7 .hero-area::before,
+.home7 .whaybest::before,
+.home7 .dealofweek::before,
+.home7 .video::before,
+.home7 .testimonial-area::before,
+.home7 .faq::before,
+.home7 .footer::before
+{
+    background: #001539;
+}
+
+
+
+.about .box,
+.dealofweek .deal-slider-area,
+.pricing .product-slider .item .single-product,
+.pricing .product-slider .owl-controls .owl-nav div,
+.video .fun-box .inner-content2,
+.video .fun-box .inner-content3,
+.testimonial-area .testimonial-slider .client,
+.testimonial-area .testimonial-slider .owl-controls .owl-nav div,
+.faq .accordion .panel,
+.faq .accordion .panel-title,
+.contact .info-box,
+.contact .contact-form-wrapper,
+.navigation.stiky-nav,
+.subscribe-section .newsletter-form-area input,
+.home5 .about .box,
+.home5 .testimonial-area .testimonial-slider .owl-controls .owl-nav div,
+.home7 .about .box,
+.home7 .testimonial-area .testimonial-slider .owl-controls .owl-nav div
+{
+   background: #032055;
+}
+
+
+.home5 .dealofweek .deal-slider-area {
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.1), 0px 0px 0px 20px rgba(255, 255, 255, 0.1), 0px 0px 0px 30px rgba(255, 255, 255, 0.1);
+}
+.home7 .dealofweek .deal-slider-area {
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.1), 0px 0px 0px 20px rgba(255, 255, 255, 0.1), 0px 0px 0px 30px rgba(255, 255, 255, 0.1);
+}
+.google_map_wrapper {
+    border: 10px solid #032055;
+}
+.testimonial-area .testimonial-img img {
+    border: 4px solid #032055;
+}
+.feature .feature-box{
+    background: none;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid rgba(234, 227, 255, 0.2);
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid rgba(234, 227, 255, 0.2);
+}
+
+.faq .accordion .panel-title::before {
+    border: 1px solid #dbe2fb;
+    color: #dbe2fb;
+}
+.subscribe-section .newsletter-form-area input{
+    color: #dbe2fb;
+}
+.input-field
+{
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.1)!important;
+    color: #dbe2fb;
+}
+
+.subscribe-section .newsletter-form-area input::placeholder,
+.input-field::placeholder
+{
+    color: #dbe2fb;
+}
+.subscribe-section .newsletter-form-area input::-webkit-placeholder,
+.input-field::-webkit-placeholder
+{
+    color: #dbe2fb;
+}
+.pricing .product-slider .item .single-product .img .links .mybtn1 {
+    background: rgba(212, 63, 141, 0.2);
+    color: #000;
+}
+.pricing .product-slider .item .single-product .img .links {
+    background: rgba(0, 18, 50, 0.85);
+}
+
+.dealofweek .deal-slider-area .content .right-area .deal-counter span {
+    background: #001539;
+    color: #fff;
+  }
+
+  .dealofweek .deal-slider-area .content .right-area .deal-counter span small {
+    color: #dbe2fb;
+  }
+  .navigation .navbar .navbar-brand img{
+      filter: none;
+  }
+
+  .footer .copy-bg {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}  
+.hero-area {
+    background: url(../images/heroarea2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer {
+    background: url(../images/footer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+@media (max-width: 991px){
+    .navigation {
+        background: #032055;
+        border-bottom: 0px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(225, 225, 225, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+      .navigation .navbar #mainmenu ul .nav-item .nav-link{
+          color: #fff;
+      }
+}
+

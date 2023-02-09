@@ -1,0 +1,20 @@
+.hide {
+  display: none !important;
+}
+.preview-image {
+  display: block;
+  max-width: 100%;
+  max-height: 70px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.detail-panel {
+  display: none;
+}
+
+.switch-status,
+.switch-paid {
+  cursor: pointer;
+}

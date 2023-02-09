@@ -1,0 +1,14 @@
+{
+    "name": "Upsell",
+    "alias": "upsell",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Upsell\\Providers\\UpsellServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

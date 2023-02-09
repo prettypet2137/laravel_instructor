@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 4 Quill Editor Demos</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../dist/css/quill.css">
+  <link rel="stylesheet" href="../dist/css/quill.snow.css">
+  <link rel="stylesheet" href="../dist/css/quill.bubble.css">
+  <script src="../dist/bootstrap-quill.js"></script>
+</head>
+
+<body>
+  <div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/text/Quill-Editor-Bootstrap-4.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+  <script src="../dist/sprite.svg.js"></script>
+  <main class="container" style="margin:150px auto">
+<h1>Bootstrap 4 Quill Editor Demos</h1>
+    <h2 class="display-4 mt-5">Classic editor</h2>
+    <div class="editor-full">
+      <div id="document-full" class="ql-scroll-y" style="height: 300px;">
+        <h1>My document</h1>
+      </div>
+    </div>
+
+    <h2 class="display-4 mt-5">Compact editor</h2>
+    <form onsubmit="console.log('submitted');">
+      <div class="editor-compact d-flex">
+        <div id="document-compact" class="ql-compact flex-fill"></div>
+        <button type="submit" class="btn btn-link flex-grow-0 flex-shrink-0"><svg style="fill: currentColor;" width="24" height="24">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#send"></use>
+          </svg></button>
+      </div>
+    </form>
+
+  </main>
+
+  <script>
+    var toolbarOptions = [
+      [{
+        'header': [1, 2, 3, 4, 5, 6, false]
+      }],
+      ['bold', 'italic', 'underline', 'strike'], // toggled buttons
+      ['blockquote', 'code-block'],
+
+      [{
+        'header': 1
+      }, {
+        'header': 2
+      }], // custom button values
+      [{
+        'list': 'ordered'
+      }, {
+        'list': 'bullet'
+      }],
+      [{
+        'script': 'sub'
+      }, {
+        'script': 'super'
+      }], // superscript/subscript
+      [{
+        'indent': '-1'
+      }, {
+        'indent': '+1'
+      }], // outdent/indent
+      [{
+        'direction': 'rtl'
+      }], // text direction
+
+      [{
+        'size': ['small', false, 'large', 'huge']
+      }], // custom dropdown
+
+      [{
+        'color': []
+      }, {
+        'background': []
+      }], // dropdown with defaults from theme
+      [{
+        'font': []
+      }],
+      [{
+        'align': []
+      }],
+      ['link', 'image'],
+
+      ['clean'] // remove formatting button
+    ];
+
+    var quillFull = new Quill('#document-full', {
+      modules: {
+        toolbar: toolbarOptions,
+        autoformat: true
+      },
+      theme: 'snow',
+      placeholder: "Write something..."
+    });
+
+    var quillCompact = new Quill('#document-compact', {
+      modules: {
+        form: {
+          submitKey: {
+            key: 'Enter',
+            shortKey: true
+          }
+        },
+        autoformat: true
+      },
+      theme: 'bubble',
+      placeholder: "Type a message. " + (/mac/i.test(navigator.platform) ? "⌘" : "Ctrl") + "+Enter to send."
+    });
+
+  </script>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

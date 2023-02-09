@@ -1,0 +1,14 @@
+{
+    "name": "Tracklink",
+    "alias": "tracklink",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Tracklink\\Providers\\TracklinkServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

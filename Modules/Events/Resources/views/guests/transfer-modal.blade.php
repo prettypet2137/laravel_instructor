@@ -1,0 +1,1 @@
+<button type="button"  data-toggle="modal" data-target="#TransferProductModal" class="btn btn-danger btn-sm" id="getTransferId">Transfer</button>

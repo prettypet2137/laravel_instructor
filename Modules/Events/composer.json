@@ -1,0 +1,25 @@
+{
+    "name": "onecheckin/events",
+    "description": "",
+    "authors": [
+        {
+            "name": "John Doe",
+            "email": "johndoe@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Events\\Providers\\EventsServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Events\\": ""
+        }
+    }
+}

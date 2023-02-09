@@ -1,0 +1,747 @@
+﻿/* ========================= */
+/* == Base iGuider Style === */
+/* ========================= */
+html {
+	position:relative;
+}
+.rtl {
+	direction: rtl;
+}
+.g-shape {
+	position:fixed;
+	z-index:-1;
+	background:red;
+	pointer-events: auto;
+	-webkit-user-select: text; 
+	-moz-user-select: text;  
+	-ms-user-select: text; 
+	user-select: text;
+	opacity:0;
+}
+.g-disable .g-shape {
+	z-index:999999;
+}
+.gFooter {
+	z-index:1;
+}
+.g-modal-body p {
+	margin-top:1.2em;
+}
+.g-modal-body > :first-child {
+	margin-top:0;
+}
+.g-modal-body > :last-child {
+	margin-bottom:0;
+}
+.g-modal-type {
+	display:none;
+}
+.rtl .gBtn  {
+	direction: rtl;
+}
+/* ================================= */
+/* =========== Preloader =========== */
+/* ================================= */
+.g-loader {
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background-color: rgba(191,191,191,0.7);
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	z-index:999999;
+	opacity:0;
+	pointer-events: none;
+	touch-action: none;
+	transition:opacity 0.5s;
+}
+.g-loader-b {
+	width:4px;
+	height:12px;
+	border-radius:2px;
+	position:absolute;
+	bottom:13px;
+	left:13px;
+	background-color:#fff;
+	opacity:0.7;
+	animation: loader-b 0.4s linear infinite;
+	transform-origin:center 10px;
+	animation-play-state: paused;
+}
+@keyframes loader-b {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.g-loader-s {
+	width:4px;
+	height:10px;
+	border-radius:2px;
+	position:absolute;
+	bottom:50%;
+	left:13px;
+	background-color:#fff;
+	opacity:0.7;
+	animation: loader-s 1.6s linear infinite;
+	transform-origin:center 10px;
+	animation-play-state: paused;	
+}
+@keyframes loader-s {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.g-preloader .g-loader-s,
+.g-preloader .g-loader-b {
+	animation-play-state: running;
+}
+.g-preloader .g-loader {
+	opacity:1;
+}
+
+/* ================================= */
+/* ====== Error Message Block ====== */
+/* ================================= */
+.gErrorMessage {
+	background-color:#FFE1E1;
+	color:#f00;
+	padding:16px 32px;
+	clear: both;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	animation: error-m 0.3s linear 1;
+	z-index: 0;
+}
+.gEventMessage {
+	background-color:#fff5e1;
+	color:#ff8a00;
+	padding:16px 32px;
+	clear: both;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	animation: error-m 0.3s linear 1;
+	z-index: 0;
+}
+@keyframes error-m {
+  0%   { background-color:#FA8072; }
+  100% { background-color:#FFE1E1; }
+}
+
+/* ================================= */
+/* ============ Tour Map =========== */
+/* ================================= */
+.g-map-pos-right {
+	right:0;
+	transform:translateX(101%);
+}
+.g-map-pos-left {
+	left:0;
+	transform:translateX(-101%);
+}
+.g-map-open .g-map-pos {
+	display:block;
+	transform:translateX(0);
+	opacity:1;
+}
+.g-map-no-clickable .g-step-item {
+	cursor: default;
+}
+.g-map-pos {
+	opacity:0;
+	position:fixed;
+	z-index:9999999;
+	overflow:hidden;
+	overflow-y:auto;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	
+}
+
+/* ================================= */
+/* ========== Modal Window ========= */
+/* ================================= */
+.g-modal-size {
+	position:relative;
+	z-index:10;
+	max-height:calc(100vh - 20px);
+}
+.gScroll {
+	overflow:hidden;
+	overflow-y:auto;
+}
+.gWidget {
+	overflow:hidden;
+}
+
+.g-modal-timer-line .g-modal-timer {
+	position:absolute;
+	left:0;
+	top:0;
+}
+.g-modal-timer-line .rtl .g-modal-timer {
+	left:auto;
+	right:0;
+}
+
+.gPage {
+	direction: ltr;
+}
+
+.g-modal-prev-hide .g-modal-prev,
+.g-modal-next-hide .g-modal-next,
+
+.g-modal-step-hide .gPage,
+
+.g-modal-cont-hide .gContent,
+.g-modal-title-hide .gHeader,
+
+.g-modal-intro-hide .g-modal-start,
+.g-modal-intro-hide .g-modal-close-intro,
+
+.g-modal-continue-hide .g-modal-begin-first,
+.g-modal-continue-hide .g-modal-begin-continue,
+
+.g-modal-map-hide .g-modal-map,
+.g-modal-map-hide .g-map-pos,
+
+.g-pager-hide .gPage,
+
+.g-modal-intro-show.g-modal-start-hide .g-modal-start,
+
+.g-modal-close-hide .g-modal-close-tour,
+
+.g-timer-hide .gTimer {
+	display:none;
+}
+
+.g-modal-close-tour,
+.g-modal-map,
+.g-modal-start,
+.g-modal-close-intro,
+.g-modal-next,
+.g-modal-prev,
+.g-modal-begin-first,
+.g-modal-begin-continue,
+.g-map-close-tour,
+.g-map-hide {
+	cursor:pointer;
+}
+
+
+.g-modal-prev-show .g-modal-prev,
+.g-modal-next-show .g-modal-next,
+
+.g-modal-step-show .gPage,
+
+.g-modal-intro-show .g-modal-start,
+.g-modal-intro-show .g-modal-close-intro,
+
+.g-modal-continue-show .g-modal-begin-first,
+.g-modal-continue-show .g-modal-begin-continue,
+
+.g-modal-close-show .g-modal-close-tour,
+.g-modal-map-show .g-modal-map,
+
+.g-timer-show .g-modal-timer {
+	display:inline-block;
+}
+
+
+.g-modal-cont-show .gContent,
+.g-modal-title-show .gHeader,
+
+
+.g-modal-map-show .g-map-pos,
+
+.g-timer-show .g-modal-timer {
+	display:block;
+}
+
+.g-modal-pos {
+	width:0 !important;
+	left:-1000px;
+	top:0;
+	height:0 !important;
+	position:fixed;
+	z-index:999999;
+	direction: ltr !important;
+}
+
+/*radial progress*/
+.g-progress {
+	transform: rotate(-90deg);
+}
+.g-progress__meter,
+.g-progress__value {
+	fill: none;
+}
+.g-progress__value {
+	stroke-linecap: round;
+}
+
+.g-map-pos,
+.g-map-pos *,
+.g-modal-pos,
+.g-modal-pos *,
+.g-map-pos *:after, 
+.g-map-pos *:before,
+.g-modal-pos *:after, 
+.g-modal-pos *:before {
+	box-sizing:border-box;
+}
+
+.g-modal-pos:after {
+	content:'';
+	width:0;
+	height:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	z-index:8;
+	-webkit-transform:translate(-50%,-50%) rotate(45deg);
+	-moz-transform:translate(-50%,-50%) rotate(45deg);
+	-ms-transform:translate(-50%,-50%) rotate(45deg);
+	-o-transform:translate(-50%,-50%) rotate(45deg);
+	transform:translate(-50%,-50%) rotate(45deg);
+}
+
+#g-overlay-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    box-sizing: border-box;
+	pointer-events: none;
+	touch-action: none;
+	z-index:999998;
+	opacity:0;
+	transition:opacity 0.3s;
+}
+.g-show #g-overlay-wrap {
+    opacity:1;
+}
+.g-event body,
+.g-disable .iGuider-highlight {
+	pointer-events: none;
+	-webkit-user-select: none; 
+	-moz-user-select: none;  
+	-ms-user-select: none; 
+	user-select: none; 
+}
+.iGuider-highlight,
+.g-map-pos,
+.g-modal-size {
+	pointer-events: auto;
+	-webkit-user-select: text; 
+	-moz-user-select: text;  
+	-ms-user-select: text; 
+	user-select: text;
+}
+
+.cone-hide:after {
+	display:none !important;
+}
+
+
+/* ================================= */
+/* == Message in center of screen == */
+/* ================================= */
+[data-pos="c"][data-cone="c"][data-cont="c"] {
+	width:0;
+	position:fixed;
+	top:50%;
+	left:50%;
+	height:auto !important;
+}
+[data-pos="c"][data-cone="c"][data-cont="c"]:after {
+	display:none;
+}
+[data-pos="c"][data-cone="c"][data-cont="c"] .g-modal-size {
+	left:50%;
+	top:50%;
+	position:relative;
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+.gCover img,
+.gContent img { 
+	width:100%;
+	display:block;
+}
+
+
+/* =========================== */
+/* == Message in right side == */
+/* =========================== */
+[data-pos="r"][data-cone="b"][data-cont="t"]:after,
+[data-pos="r"][data-cone="t"][data-cont="t"]:after,
+[data-pos="r"][data-cone="c"][data-cont="t"]:after{
+	border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+[data-pos="r"][data-cone="b"][data-cont="b"]:after,
+[data-pos="r"][data-cone="t"][data-cont="b"]:after,
+[data-pos="r"][data-cone="c"][data-cont="b"]:after {
+	border-left-color: transparent;
+    border-top-color: transparent;
+}
+[data-pos="r"][data-cont="c"] .g-modal-size {
+	top:50%;
+	left:0;
+	-webkit-transform:translate(0,-50%);
+	-moz-transform:translate(0,-50%);
+	-ms-transform:translate(0,-50%);
+	-o-transform:translate(0,-50%);
+	transform:translate(0,-50%);
+}
+[data-pos="r"][data-cont="b"] .g-modal-size {
+	top:0;
+	left:0;
+	-webkit-transform:translate(0,0);
+	-moz-transform:translate(0,0);
+	-ms-transform:translate(0,0);
+	-o-transform:translate(0,0);
+	transform:translate(0,0);
+}
+[data-pos="r"][data-cont="t"] .g-modal-size {
+	top:0;
+	left:0;
+	-webkit-transform:translate(0,-100%);
+	-moz-transform:translate(0,-100%);
+	-ms-transform:translate(0,-100%);
+	-o-transform:translate(0,-100%);
+	transform:translate(0,-100%);
+}
+
+/* ========================== */
+/* == Message in left side == */
+/* ========================== */
+[data-pos="l"][data-cone="b"][data-cont="t"]:after,
+[data-pos="l"][data-cone="t"][data-cont="t"]:after,
+[data-pos="l"][data-cone="c"][data-cont="t"]:after{
+	border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+[data-pos="l"][data-cone="b"][data-cont="b"]:after,
+[data-pos="l"][data-cone="t"][data-cont="b"]:after,
+[data-pos="l"][data-cone="c"][data-cont="b"]:after {
+	border-left-color: transparent;
+    border-top-color: transparent;
+}
+[data-pos="l"][data-cont="c"] .g-modal-size {
+	top:50%;
+	left:0;
+	-webkit-transform:translate(-100%,-50%);
+	-moz-transform:translate(-100%,-50%);
+	-ms-transform:translate(-100%,-50%);
+	-o-transform:translate(-100%,-50%);
+	transform:translate(-100%,-50%);
+}
+[data-pos="l"][data-cont="b"] .g-modal-size {
+	top:0;
+	left:0;
+	-webkit-transform:translate(-100%,0);
+	-moz-transform:translate(-100%,0);
+	-ms-transform:translate(-100%,0);
+	-o-transform:translate(-100%,0);
+	transform:translate(-100%,0);
+}
+[data-pos="l"][data-cont="t"] .g-modal-size {
+	top:0;
+	left:0;
+	-webkit-transform:translate(-100%,-100%);
+	-moz-transform:translate(-100%,-100%);
+	-ms-transform:translate(-100%,-100%);
+	-o-transform:translate(-100%,-100%);
+	transform:translate(-100%,-100%);
+}
+
+/* ============================ */
+/* == Message in bottom side == */
+/* ============================ */
+[data-pos="b"][data-cone="l"][data-cont="l"]:after,
+[data-pos="b"][data-cone="r"][data-cont="l"]:after,
+[data-pos="b"][data-cone="c"][data-cont="l"]:after{
+	border-right-color: transparent;
+    border-top-color: transparent;
+}
+[data-pos="b"][data-cone="l"][data-cont="r"]:after,
+[data-pos="b"][data-cone="r"][data-cont="r"]:after,
+[data-pos="b"][data-cone="c"][data-cont="r"]:after {
+	border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+[data-pos="b"][data-cont="c"] .g-modal-size {
+	left:50%;
+	top:0;
+	-webkit-transform:translate(-50%,0);
+	-moz-transform:translate(-50%,0);
+	-ms-transform:translate(-50%,0);
+	-o-transform:translate(-50%,0);
+	transform:translate(-50%,0);
+}
+[data-pos="b"][data-cont="l"] .g-modal-size {
+	top:0;
+	left:0;
+	-webkit-transform:translate(-100%,0);
+	-moz-transform:translate(-100%,0);
+	-ms-transform:translate(-100%,0);
+	-o-transform:translate(-100%,0);
+	transform:translate(-100%,0);
+}
+[data-pos="b"][data-cont="r"] .g-modal-size {
+	top:0;
+	left:0;
+	-webkit-transform:translate(0,0);
+	-moz-transform:translate(0,0);
+	-ms-transform:translate(0,0);
+	-o-transform:translate(0,0);
+	transform:translate(0,0);
+}
+
+/* ========================= */
+/* == Message in top side == */
+/* ========================= */
+[data-pos="t"][data-cone="l"][data-cont="l"]:after,
+[data-pos="t"][data-cone="r"][data-cont="l"]:after,
+[data-pos="t"][data-cone="c"][data-cont="l"]:after{
+	border-right-color: transparent;
+    border-top-color: transparent;
+}
+[data-pos="t"][data-cone="l"][data-cont="r"]:after,
+[data-pos="t"][data-cone="r"][data-cont="r"]:after,
+[data-pos="t"][data-cone="c"][data-cont="r"]:after {
+	border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+[data-pos="t"][data-cont="c"] .g-modal-size {
+	left:50%;
+	top:0;
+	-webkit-transform:translate(-50%,-100%);
+	-moz-transform:translate(-50%,-100%);
+	-ms-transform:translate(-50%,-100%);
+	-o-transform:translate(-50%,-100%);
+	transform:translate(-50%,-100%);
+}
+[data-pos="t"][data-cont="l"] .g-modal-size {
+	top:0;
+	left:0;
+	-webkit-transform:translate(-100%,-100%);
+	-moz-transform:translate(-100%,-100%);
+	-ms-transform:translate(-100%,-100%);
+	-o-transform:translate(-100%,-100%);
+	transform:translate(-100%,-100%);
+}
+[data-pos="t"][data-cont="r"] .g-modal-size {
+	top:0;
+	left:0;
+	-webkit-transform:translate(0,-100%);
+	-moz-transform:translate(0,-100%);
+	-ms-transform:translate(0,-100%);
+	-o-transform:translate(0,-100%);
+	transform:translate(0,-100%);
+}
+
+
+/* =========================== */
+/* == Tour List Button == */
+/* =========================== */
+.iguider-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99999;
+    background: #00a2ff;
+    cursor: pointer;
+    text-align: center;
+	font:16px/60px arial;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 0px, rgba(0, 0, 0, 0.15) 0px 3px 5px 0px;
+    transition:transform 0.3s all;
+}
+.iguider-btn-shape {
+	width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 0;
+	color:#fff;
+	padding-top: 14px;
+	overflow:hidden;
+}
+
+.iguider-btn-shape:after {
+	content: 'Help';
+	color:#fff;
+	font:11px/1.2em arial;
+	text-transform:uppercase;
+	display:block;
+	padding-top:6px;
+	transition:0.3s all;
+	transform-origin:center bottom;
+}
+.iguider-btn-icon {
+	display:block;
+	transition:0.3s all;
+	transform-origin:center top;
+	line-height:1em;
+}
+.iguider-btn-icon:after {
+	content:'?';
+	font-weight:700;
+	line-height:17px;
+	border:1px solid #fff;
+	border-radius:50%;
+	width:18px;
+	height:18px;
+	display:inline-block;
+}
+.iguider-btn:hover {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px 0px, rgba(0, 0, 0, 0.15) 0px 5px 10px 0px;
+}
+.iguider-btn:hover .iguider-btn-shape:after,
+.g-tour-list-show .iguider-btn-shape:after{
+	opacity:0;
+	transform:scale(0.5);
+}
+.iguider-btn:hover .iguider-btn-icon,
+.g-tour-list-show .iguider-btn-icon {
+	display:block;
+	transform:scale(2.3);
+}
+
+/* ========================= */
+/* ======= Tour List ======= */
+/* ========================= */
+.iguider-btnCont {
+	display:block;
+	pointer-events: none;
+	touch-action: none;
+	opacity:0;
+	position: absolute;
+	bottom:100%;
+	
+	transform:translate(0,0);
+	width: 320px;
+	background-color: #fff;
+	color:#000;
+	text-align:left;
+	padding: 20px 0;
+	z-index: 999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -10px;
+	line-height:1.2em;
+	overflow:hidden;
+	overflow-y:scroll;
+	max-height:calc(100vh - 160px);
+	transition:.3s all;
+}
+.g-tour-list-right .iguider-btnCont {
+	left:0;
+}
+.g-tour-list-left .iguider-btnCont {
+	right:0;
+}
+
+.tourlist-item {
+	padding:20px 40px 20px 40px;
+	background-color:#fff;
+	position:relative;
+	z-index:1;
+	opacity:0;
+	border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.tourlist-item:last-child {
+	border-bottom:0;
+}
+.tourlist-item:after {
+	content:'';
+	width:6px;
+	height:6px;
+	display:block;
+	border-width:2px 2px 0 0;
+	border-style:solid;
+	border-color:rgb(56, 112, 189);
+	position:absolute;
+	right:18px;
+	top:50%;
+	transform:translateY(-50%) rotate(45deg);
+	
+}
+.tourlist-item:before {
+	content:'';
+	width:20px;
+	height:20px;
+	display:block;
+	position:absolute;
+	right:10px;
+	top:50%;
+	transform:translateY(-50%);
+	background:#fff;
+	transition:0.1s all;
+}
+
+
+.tourlist-item-title {
+	font:700 16px/1.2em arial;
+	opacity:0.6;
+	transition:0.1s all;
+}
+
+.tourlist-item-subtitle {
+	font:12px/1.2em arial;
+	opacity:0.5;
+	padding-top:5px;
+}
+
+.tourlist-item + .tourlist-item {
+	margin-top:0;
+}
+.tourlist-item:hover {
+	/*box-shadow:40px 20px 40px -30px rgba(0,0,0,0.2), 40px -20px 40px -30px rgba(0,0,0,0.2);*/
+	position:relative;
+	z-index:2;
+}
+ .tourlist-item:hover:before {
+	background:#eee;
+}
+
+.tourlist-item:hover .tourlist-item-title {
+	opacity:1;
+}
+
+.g-tour-list-show .iguider-btnCont {
+	opacity:1;
+	pointer-events: auto;
+	touch-action: auto;
+	transform:translate(0,-20px);
+}
+
+
+/*responsive styles*/
+@media only screen and (max-height: 500px) {
+	.gMapBufer {
+		height:0 !important;
+	}
+	.g-map-pos {
+		top:5px !important;
+		bottom:5px !important;
+	}
+	.gCover {
+		display:none !important;
+	}
+}

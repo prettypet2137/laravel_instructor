@@ -1,0 +1,111 @@
+/*---------------------------
+** Deal Of the Week Start
+---------------------------*/
+
+.dealofweek {
+    padding: 110px 0px 120px;
+    background: #F7F9FF;
+    position: relative;
+
+    .deal-slider-area {
+        background: #fff;
+        border-radius: 3px;
+        padding: 40px 40px 40px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.06);
+      .content{
+        .left-area {
+          text-align: center;
+          padding: 0px 50px;
+        }
+
+        .right-area {
+          align-self: center;
+
+          .stars {
+              padding-left: 0px;
+              margin-bottom: 5px;
+
+              li {
+                  display: inline-block;
+                  font-size: 14px;
+                  color: #f9bd22;
+              }
+          }
+
+          .name {
+              font-size: 24px;
+              line-height: 34px;
+              margin-bottom: 9px;
+              font-weight: 600;
+          }
+
+          .description {
+              margin-bottom: 16px;
+          }
+
+          .price {
+            margin-top: 25px;
+              p {
+                  span {
+                      font-size: 30px;
+                      line-height: 30px;
+                      font-weight: 900;
+                      @include gradient-text1;
+                      margin-bottom: 0px;
+                  }
+              }
+
+              del {
+                  font-size: 18px;
+                  line-height: 18px;
+                  font-weight: 600;
+                  margin-left: 10px;
+                  color: #555
+              }
+          }
+
+          .links{
+            display: inline-block;
+            margin-top: 30px;
+            .mybtn1{
+              background: rgba($base-color2, .20);
+              color: #000;
+              transition: all .3s linear;
+              &:hover{
+                color: #fff;
+              }
+            }
+          }
+
+          .deal-counter {
+              margin-top: 10px;
+
+              span {
+                  // border: 1px solid #000;
+                  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.10);
+                  padding: 8px 20px;
+                  border-radius: 3px;
+                  display: inline-block;
+                  margin-right: 10px;
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 24px;
+                  color: #242424;
+
+                  &:last-child {
+                      margin-right: 0px;
+                  }
+
+                  small {
+                      display: block;
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 24px;
+                      color: #555;
+                  }
+              }
+          }
+        }
+      }  
+    }
+}

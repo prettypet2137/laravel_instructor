@@ -1,0 +1,14 @@
+{
+    "name": "PagesWebsite",
+    "alias": "pageswebsite",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\PagesWebsite\\Providers\\PagesWebsiteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

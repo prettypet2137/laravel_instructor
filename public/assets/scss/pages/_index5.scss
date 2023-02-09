@@ -1,0 +1,380 @@
+// background: #D31027;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #EA384D, #D31027);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.home5{
+    
+ 
+    .hero-area{
+        position: relative;
+        background: none;  
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            @include main-gradint2;
+            border-radius: 0px 0px 300px 0px;
+        }
+        .shape{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 0px 0px 300px 0px;
+            animation: sclanmi3 7s linear infinite;
+        }
+        
+        @keyframes sclanmi3 {
+            0%{
+                transform: scale(.8);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(.8);
+            }
+        }
+        .discount-circle-inner{
+            @include main-gradint2;
+        }
+    }
+    .about{
+        position: relative;
+        .box {
+            margin-bottom: 30px;
+            background: #fff;
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 30px 0px 30px 0px;
+            .inner-box .icon i{
+                @include gradient-text2;
+            }
+            &::after{
+                @include main-gradint2;
+                opacity: 1;
+                width: 100%;
+                height: 0%;
+                top: 0px;
+                left: 0px;
+                transition: $transition;
+            }
+            &:hover{
+                transform: translateY(-0px)!important;
+                &::after{
+                    height: 100%;
+                }
+                .icon{
+                    i{
+                      @include gradient-text-white;
+                    }
+                  }
+                  .title{
+                      color: #fff;
+                  }
+                  .text{
+                    color: #fff;
+                  }
+            }
+        }
+    }
+    .whaybest{
+        position: relative;
+        background: none;  
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            @include main-gradint2;
+            border-radius: 200px 0px 200px 0px;
+        }
+        .shape{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 0px 0px 300px 0px;
+            animation: sclanmi3 7s linear infinite;
+        }
+        .info{
+            .info-title{
+                color: #fff;
+            }
+            .feature-list{
+                li{
+                    .icon{
+                        i{
+                            @include gradient-text-white;
+                        }
+                    }
+                    .content{
+                        h4{
+                            color: #fff;
+                        }
+                        p{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .feature{
+       .feature-box{
+           .icon-area{
+              .icon{
+                    i{
+                        @include gradient-text2;
+                }
+              }
+           }
+       } 
+    }
+    .dealofweek{
+        position: relative;
+        background: none;  
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            @include main-gradint2;
+            border-radius: 200px 0px 200px 0px;
+        }
+        overflow: hidden;
+        .shape{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 0px 0px 300px 0px;
+            animation: sclanmi3 7s linear infinite;
+        }
+        .section-title{
+            .title{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        .deal-slider-area{
+            box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.219), 0px 0px 0px 20px rgba(255, 255, 255, 0.219), 0px 0px 0px 30px rgba(255, 255, 255, 0.219);
+        }
+    }
+    .pricing .product-slider .owl-controls .owl-nav div:hover {
+        @include main-gradint2;
+    }
+    .video{
+        position: relative;
+        background: none;  
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            @include main-gradint2;
+            border-radius: 200px 0px 200px 0px;
+        }
+        
+        overflow: hidden;
+        .shape{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 0px 0px 300px 0px;
+            animation: sclanmi3 7s linear infinite;
+        }
+        .section-title{
+            .title{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        .video-play-btn i,
+        .fun-box .inner-content2 .icon i,
+        .fun-box .inner-content3 .icon i
+        {
+            @include gradient-text2;
+        }
+    }
+    .testimonial-area{
+        position: relative;
+        background: none;  
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            @include main-gradint2;
+            border-radius: 200px 0px 200px 0px;
+        }
+        overflow: hidden;
+        .shape{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 0px 0px 300px 0px;
+            animation: sclanmi3 7s linear infinite;
+        }
+        .section-title{
+            .title{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        .testimonial-slider .client{
+            border-radius: 4px;
+        }
+        .testimonial-slider .owl-controls .owl-nav div{
+            background: #fff;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        }
+        .testimonial-slider .owl-controls .owl-nav div:hover {
+            @include main-gradint2;
+        }
+        .testimonial-slider .client .client-image::after {
+            @include main-gradint2;
+        }
+    }
+    .subscribe-section{
+        .download-buttons{
+            margin-top: 55px;
+            display: block;
+            text-align: center;
+            .text{
+                font-size: 16px;
+                line-height: 26px;
+            }
+            a{
+                @include main-gradint2;
+                display: inline-block;
+                padding: 18px 30px;
+                font-size: 18px;
+                border-radius: 3px;
+                margin: 4px 5px;
+                color: #fff;
+                i{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .subscribe-section .newsletter-form-area button{
+        @include main-gradint2;
+        cursor: pointer;
+    }
+    .faq{
+        position: relative;
+        background: none;  
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            @include main-gradint2;
+            border-radius: 200px 0px 200px 0px;
+            z-index: -1;
+        }
+        
+        overflow: hidden;
+        .shape{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 0px 0px 300px 0px;
+            animation: sclanmi3 7s linear infinite;
+        }
+        .section-title{
+            .title{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+
+    }
+    .faq .accordion .panel::after {
+       display: none;
+    }
+    .contact .info-box .left .icon i{
+        @include gradient-text2;
+    }
+    .contact .info-box .left .icon::after {
+        border: 1px dashed #e42d43;
+        animation: shapeani2 10s linear infinite;
+    }
+    .footer{
+        @include main-gradint2;
+    }
+    .footer .footer-info-area .text p,
+    .footer .copy-bg p,
+    .footer .copy-bg p a
+    {
+        color: #fff;
+    }
+    .bottomtotop i{
+        @include main-gradint2;
+    }
+    .compare-section .compare-table .price,
+    .pricing .product-slider .item .single-product .content .price .new-price,
+    .dealofweek .deal-slider-area .content .right-area .price p span
+    {
+        @include gradient-text2;
+    }
+    .footer .copy-bg {
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .footer .footer-info-area .footer-logo img {
+        max-width: 170px;
+        filter: brightness(0) invert(1);
+    }
+    .navigation .navbar #mainmenu ul .nav-item.dropdown:hover .dropdown-menu .dropdown-item:hover {
+        @include main-gradint2;
+    }
+    .preloader-inner {
+        @include main-gradint2;
+    }
+    .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link:hover::before, .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link.active::before {
+        @include main-gradint2;
+    }
+    .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link::before {
+        @include main-gradint2;
+    }
+    .footer{
+        position: relative;
+        overflow: hidden;
+        .shape{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 0px 0px 300px 0px;
+            animation: sclanmi3 7s linear infinite;
+        }
+    }
+    .pricing{
+        .mybtn-bg {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .contact .contact-form-wrapper .mybtn3.mybtn-bg{
+        margin-top: 10px;
+    }
+}

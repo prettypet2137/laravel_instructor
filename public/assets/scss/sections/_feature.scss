@@ -1,0 +1,136 @@
+/*---------------------------
+** Feature Area Start
+---------------------------*/
+
+.feature{
+  padding: 110px 0px 95px;  
+  position: relative; 
+  .section-title{
+    margin-bottom: 47px;
+  }
+
+ .left-feature{
+   .feature-box{
+     .icon{
+       margin-left: 20px;
+     }
+     .details{
+       text-align: right;
+     }
+   }
+  
+ }
+ .right-feature{
+  .center-feature{
+    text-align: center;
+    justify-content: center;
+  }
+}
+ .right-feature{
+   .feature-box{
+    .icon{
+      margin-right: 20px;
+    }
+     .details{
+       text-align: left;
+     }
+   }
+ }
+
+  .feature-box{
+    margin-bottom: 30px;
+    background: $white;
+    display: flex;
+    transition: $transition;
+    position: relative;
+    .icon-area{
+      display: flex;
+      .icon{
+        align-self: center;
+      }
+    }
+    .icon{
+      width: 70px;
+      height: 70px;
+      margin-right: 20px;
+      text-align: center;
+      line-height: 70px;
+      font-size: 55px;
+      border-radius: 50%;
+      position: relative;
+      i{
+        @include gradient-text1;
+      }
+    }
+    .details{
+      flex: 1;
+      .title{
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 600;
+        color: $dark-color;
+        margin: 26px 0px 19px;
+      }
+      .text{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 8px;
+      }
+    }
+    .feature-circle{
+      opacity: 0;
+      transition: $transition;
+      z-index: 95;
+    }
+    &:hover{
+      .feature-circle{
+        opacity: 1;
+      }
+    }
+  
+}
+.feature-box1{
+  .feature-circle{
+    position: absolute;
+    right: -90px;
+    top: 170px;
+  }
+}
+.feature-box2{
+  .feature-circle{
+    position: absolute;
+    right: -90px;
+    top: 80px;
+  }
+}
+.feature-box3{
+  .feature-circle{
+    position: absolute;
+    right: -90px;
+    top: -5px;
+  }
+}
+.feature-box4{
+  .feature-circle{
+    position: absolute;
+    left: -120px;
+    right: auto;
+    top: 110px;
+  }
+}
+.feature-box5{
+  .feature-circle{
+    position: absolute;
+    left: -100px;
+    top: 80px;
+  }
+}
+.feature-box6{
+  .feature-circle{
+    position: absolute;
+    left: -130px;
+    top: 50px;
+  }
+}
+}
+

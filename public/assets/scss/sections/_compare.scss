@@ -1,0 +1,60 @@
+.compare-section{
+    padding: 90px 0px 90px;
+    .mybtn1{
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+        background: rgba($base-color2, .20);
+        color: #000;
+        transition: all .3s linear;
+        &:hover{
+          color: #fff!important;
+        }
+      }
+      .compare-table{
+          th,
+          td{
+              font-size: 14px;
+              vertical-align: middle;
+          }
+          .price{
+              font-size: 24px;
+              font-weight: 700;
+              @include gradient-text1();
+          }
+          thead{
+              .product-image{
+                  padding: 30px 15px;
+              }
+              .product-title{
+                  font-size: 18px;
+                  line-height: 28px;
+                  margin-bottom: 0px;
+                  color: #242424;
+              }
+              .product-subtitle{
+                  font-size: 14px;
+                  font-weight: normal;
+                  color: #555;
+                  line-height: 24px;
+                  margin-bottom: 0px;
+              }
+          }
+          tbody{
+              th{
+                  width: 150px;
+                  color: #242424;
+              }
+          }
+          tfoot{
+              td{
+                  vertical-align: middle;
+                  a{
+                      display: block;
+                      margin: 0 auto;
+                  }
+              }
+          }
+      }
+}

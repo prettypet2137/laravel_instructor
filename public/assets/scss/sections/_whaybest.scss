@@ -1,0 +1,82 @@
+/*---------------------------
+** We are best Area Start
+---------------------------*/
+
+.whaybest{
+  position: relative;
+  padding: 110px 0px 83px;
+  background: #F7F9FF;
+
+  .row-one{
+    margin-bottom: 55px;
+  }
+
+  .info {
+    .info-title {
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 700;
+      color: $dark-color;
+      margin-bottom: 23px;
+      display: block;
+      span {
+        @include gradient-text1;
+      }
+    }
+  }
+  .about-img{
+    text-align: center;
+    padding: 0px 90px;
+    align-self: center;
+    img{
+      animation: shapeani3 5s linear infinite;
+    }
+  }
+  .feature-list{
+    padding-left: 0px;
+    margin-top: 59px;
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      max-width: 50%;
+      flex: 50%;
+      padding-left: 15px;
+      padding-right: 15px;
+      list-style: none;
+      cursor: pointer;
+      margin-bottom: 8px;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+      .icon{
+        margin-bottom: 14px;
+        i{
+          @include gradient-text1;
+          font-size: 55px;
+          line-height: 65px;
+        }
+      }
+      .content{
+        flex: 1;
+        h4{
+          font-size: 24px;
+          line-height: 34px;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        p{
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      &:hover{
+        .icon{
+          &::after{
+            border-color: $base-color2;
+           animation: shapeani2 10s linear infinite;
+          }
+        }
+      }
+    }
+  }
+}

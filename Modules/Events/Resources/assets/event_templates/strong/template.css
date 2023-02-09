@@ -1,0 +1,442 @@
+body {
+	font: 300 16px/1.6em var(--font-family), sans-serif;
+	color: #4b4b4b;
+}
+.mb-0{
+	margin-bottom: 0px !important;
+}
+h2 {
+	font: 800 32px/1.2em var(--font-family), sans-serif;
+}
+
+h2 span {
+	color: var(--theme-color);
+}
+
+h3 {
+	font: 800 22px/1.3em var(--font-family), sans-serif;
+}
+
+h4 {
+	font: 800 20px/1.3em var(--font-family), sans-serif;
+}
+
+p {
+	font: 300 16px/1.5em var(--font-family), sans-serif;
+}
+
+a {
+	font: 600 16px/1.5em var(--font-family), sans-serif;
+	color: #4b4b4b;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #4b4b4b;
+}
+
+.button.solid {
+	display: inline-block;
+	margin-top: 15px;
+	max-width: 250px;
+	padding: 9px 38px 9px 38px;
+	font: 600 16px/1.4em var(--font-family), sans-serif;
+	background-color: var(--theme-color);
+	color: #fff;
+	border: 2px solid var(--theme-color);
+	border-radius: 2px;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.button.solid:hover {
+	text-decoration: none;
+	border: 2px solid var(--theme-color);
+	background-color: #fff;
+	color: var(--theme-color);
+}
+
+
+
+/***** 04. Header *****/
+header {
+	position: relative;
+	min-height: auto;
+	width: 100%;
+	background: var(--theme-color); /* For browsers that do not support gradients */    
+	background-size: cover;
+	min-height: 100%;
+}
+
+header .flex-container-wrapper {
+	/* IE fix for vertical alignment in flex box */
+	display: flex;
+	flex-direction: column;
+	height: 100%; 
+}
+
+header .header-content {
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 25px;
+	padding: 40px 0px 100px 0px;
+	min-height: 99vh; 
+	text-align: center;
+}
+
+header .header-content h1 {
+	margin-top: 35px;
+	font: 800 56px/1.1em var(--font-family), sans-serif;
+	color: #fff;
+}
+
+header .header-content p.join-us {
+	margin-top: 25px;
+	font: 300 24px/1.4em var(--font-family), sans-serif;
+	color: #fff;
+}
+
+header .header-content .button.transparent {
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding: 12px 46px 12px 46px;
+	font: 600 16px/1.3em var(--font-family), sans-serif;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	color: #fff;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+header .header-content .button.transparent:hover {
+	border: 2px solid #fff;
+	background-color: #fff;
+	color: var(--theme-color);
+	text-decoration: none;
+}
+
+header .header-content #svg-header-bottom {
+	z-index: 1;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	bottom: 0px;
+	right: -1px;
+	fill: #ebebeb;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+/* Form PopUp Content */
+#form-popup {
+	position: relative;
+	margin: 40px auto;
+	padding: 20px 20px 30px 20px;
+	max-width: 400px;
+	background: #fff;
+}
+
+#form-popup h3 {
+	margin-top: 10px;
+	font: 800 34px/1.3em var(--font-family), sans-serif;
+	text-align: center
+}
+
+#form-popup h3 span {
+	color: var(--theme-color)
+}
+
+#form-popup form {
+	position: relative;
+	margin-top: 22px;
+}
+#form-popup form select {
+    /* you should keep these first rules in place to maintain cross-browser behavior */
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('images/down-arrow.png');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+#form-popup form input, select.form-control, textarea.form-control  {
+	z-index: 9999;
+	margin-top: 20px;
+	padding-bottom: 7px;
+	height: 44px;
+	font: 300 16px/1.6em var(--font-family), sans-serif;
+	border-radius: 2px;
+	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+}
+textarea.form-control {
+	height: auto;
+}
+
+#form-popup form button {
+	display: block;
+	margin-top: 22px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 12px 20px 12px 20px;
+	width: 160px;
+	font: 600 16px/1.4em var(--font-family), sans-serif;
+	border: 2px solid var(--theme-color);
+	border-radius: 2px;
+	background-color: var(--theme-color);
+	color: #fff;
+}
+
+#form-popup form button:hover {
+	background-color: #fff;
+	color: var(--theme-color);
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+/***** 05. Subheader *****/
+#subheader {
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 90px;
+	text-align: center;
+	background-color: #ebebeb;
+}
+
+#subheader .countdown {
+	margin-top: 10px;
+	margin-bottom: 25px;
+	font: 300 40px/0.6em var(--font-family), sans-serif;
+}
+
+#subheader .countdown .clock .counter-number {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#subheader .countdown .clock .separator {
+	display: inline-block;
+	margin-top: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 30px;
+	vertical-align: top;
+}
+
+#subheader .countdown .clock .counter-number .timer-text {
+	margin-top: 0px;
+	font: 300 16px/1.2em var(--font-family), sans-serif;
+	text-align: center;
+}
+
+#subheader p {
+	font: 300 20px/1.5em var(--font-family), sans-serif;
+}
+
+#subheader #svg-subheader-bottom {
+	z-index: 2;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	fill: #fff;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+
+/* 06. Description */
+#description {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+#description h2 {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+/***** 17. Media Queries *****/
+/* Min-width width 768px */
+@media (min-width: 768px) {
+	
+	h2 {
+		font: 800 44px/1em var(--font-family), sans-serif;
+	}
+	
+	h3 {
+		font: 800 26px/1.3em var(--font-family), sans-serif;
+	}
+	
+	.button.solid {
+		width: auto;
+	}
+	
+	
+	header .header-content {
+		padding: 80px 0px 120px 0px;
+	}
+		
+	header .header-content h1 {
+		margin-top: 0px;
+		font: 600 60px/1.1em var(--font-family), sans-serif;
+	}
+	
+	#subheader {
+		padding-top: 60px;
+		padding-bottom: 120px;
+	}
+	
+	#subheader .countdown {
+		margin-bottom: 25px;
+		font: 300 76px/0.4em var(--font-family), sans-serif;
+	}
+	
+	#subheader .countdown .clock .counter-number {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	#subheader .countdown .clock .counter-number .timer-text {
+		font: 300 18px/1.2em var(--font-family), sans-serif;
+	}
+	
+	#description h2 {
+		margin-bottom: 30px;
+	}
+	
+}
+
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+	h2 {
+		font: 800 48px/1em var(--font-family), sans-serif;
+	}
+	
+	header .header-content {
+		padding: 50px 0px 120px 0px;
+	}
+	
+	header .header-content h1 {
+		margin-top: 35px;
+		font: 800 68px/1.1em var(--font-family), sans-serif;
+	}
+	
+	header .header-content p.join-us {
+		margin-left: 15%;
+		margin-right: 15%;
+		font: 400 26px/1.4em var(--font-family), sans-serif;
+	}
+		
+	#subheader {
+		padding-top: 60px;
+		padding-bottom: 130px;
+	}
+	
+	#subheader p {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	#subheader .countdown {
+		font: 300 86px/0.4em var(--font-family), sans-serif;
+	}
+	
+	#description {
+		padding-top: 50px;
+		padding-bottom: 70px;
+	}
+	
+	#description h2 {
+		margin-top: 35px;
+		text-align: left;
+	}
+	
+	#description p {
+		margin-right: 25px;
+	}
+
+}
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+	header .header-content {
+		padding: 40px 0px 120px 0px;
+	}
+	
+	header .header-content h1 {
+		margin-top: 0px;
+		font: 800 98px/1.1em var(--font-family), sans-serif;
+	}
+	
+	#subheader {
+		padding-bottom: 150px;
+	}
+	
+	#subheader p {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	
+	#subheader .countdown {
+		font: 300 98px/0.4em var(--font-family), sans-serif;
+	}
+		
+	#description h2 {
+		margin-top: 70px;
+	}
+	
+}
+.map-responsive iframe {
+	height: 100%;
+	width: 100%;
+	min-height: 500px;
+	border: none;
+}
+#description img{
+	max-width: 100%;
+}
+@media (max-width: 768px) {
+	.map-responsive iframe {
+		min-height: 300px;
+	}
+}
+.action_footer {
+	position: fixed!important;
+	bottom: 5px !important;
+	width: 100%!important;
+	right: 80px !important;
+	z-index: 999999!important;
+}
+
+.action_footer .cd-top {
+	width: auto!important;
+	min-width: 180px !important;
+	position: absolute!important;
+	top: -40px !important;
+	right: -50px !important;
+	background: #000!important;
+	border-radius: 3px !important;
+	padding: 5px !important;
+	font-size: 16px!important;
+	color: #fff!important;
+	text-align: center!important;
+	text-decoration: none;
+}

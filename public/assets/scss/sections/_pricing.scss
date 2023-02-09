@@ -1,0 +1,125 @@
+/*-----------------------------
+** Pricing Area Start
+------------------------------*/
+
+.pricing{
+  padding: 110px 0px 120px;
+  position: relative;
+.product-slider{
+  .item{
+    .single-product{
+      background: rgba($base-color, .05);
+      text-align: center;
+      .img{
+        text-align: center;
+        background: rgba($base-color2, .2);
+        padding: 30px 30px 24px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      .links{
+        display: inline-block;
+        position: absolute;
+        top: 101%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.50);
+        transition: $transition;
+        opacity: 0;
+        .mybtn1{
+          background: rgba(#fff, .80);
+          color: #000;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: all .3s linear;
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+      }
+      .content{
+        padding: 25px 27px;
+        .stars{
+          padding-left: 0px;
+          margin-bottom: 10px;
+          li{
+            display: inline-block;
+            font-size: 14px;
+            color: rgb(86, 235, 0);
+          }
+        }
+        .title{
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 600;
+          margin-bottom: 0px;
+        }
+        .price{
+          margin-bottom: 0px;
+          .new-price{
+            display: inline-block;
+            font-size: 26px;
+            line-height: 36px;
+            font-weight: 700;
+            @include gradient-text1;
+            margin-right: 7px;
+            letter-spacing: -1px;
+            margin-bottom: 5px;
+          }
+          small{
+            font-size: 18px;
+            font-weight: 700;
+            color: #888;
+            display: inline-block;
+          }
+        }
+      }
+      &:hover{
+        .img{
+          .links{
+            top: 0px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .owl-controls{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    .owl-nav{
+      div{
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        line-height: 41px;
+        text-align: center;
+        margin: 0px 5px;
+        border-radius: 50%;
+        font-size: 22px;
+        transition: $transition;
+        background: rgba($base-color, .05);
+        color: #242424;
+        &:hover{
+          background: $base-color;
+          color: #fff;
+        }
+      }
+      display: inline-block;
+    }
+  }
+}
+
+}
+
+
+
+
+/*-----------------------------
+** Pricing Area Start
+------------------------------*/

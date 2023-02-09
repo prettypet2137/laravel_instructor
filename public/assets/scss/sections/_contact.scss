@@ -1,0 +1,102 @@
+/*-----------------------------
+** Contact Area Start
+------------------------------*/
+
+.contact{
+  padding: 110px 0px 90px;
+  position: relative;
+
+  .info-box{
+    background: $white;
+    margin-bottom: 30px;
+    padding: 30px 30px 22px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    @include box-shadow(0px, 5px, 25px, rgba(#000, .08), $inset: false);
+    .left{
+      margin-bottom: 25px;
+      .icon{
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 70px;
+        display: inline-block;
+        position: relative;
+        &::after{
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          border: 1px dashed $base-color;
+          animation: shapeani2 10s linear infinite;
+        }
+        i{
+          @include gradient-text1;
+        }
+      }
+    }
+    .right{
+      text-align: center;
+      .content{
+        p{
+          margin-bottom: 0px;
+        }
+      }
+    }
+    &:hover{
+      .left{
+        .icon{
+          &::after{
+            border: 1px dashed $base-color2;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-form-wrapper{
+    background: $white;
+    @include box-shadow(0px, 5px, 25px, rgba(#000, .08), $inset: false);
+    padding: 40px 25px 40px;
+    @include transition();
+    .section-title{
+      margin-bottom: 48px;
+    }
+    #contact-form{
+      textarea{
+        margin-bottom: 9px;
+      }
+      .mybtn1{
+        margin-top: 7px;
+        background: rgba($base-color2, .20);
+        color: #000;
+        transition: .3s;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .google_map_wrapper{
+    padding: 0px!important;
+    iframe{
+      width: 100%!important;
+      height: 405px!important;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+ 
+
+
+/*-----------------------------
+** Contact Area End
+------------------------------*/

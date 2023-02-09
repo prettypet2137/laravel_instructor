@@ -1,0 +1,95 @@
+.event-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.event-header:before {
+    position: absolute;
+    background: rgba(53,67,78,.46)!important;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.event-header .event-header-content {
+    width: 90%;
+    height: auto;
+    position: inherit;
+}
+
+.event-header .event-header-content .title {
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+}
+
+.event-header .event-header-content .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.event-header .event-header-content .buttons .btn {
+    border-radius: 33px;
+    margin: 10px 10px;
+}
+
+.descdescription-head{
+    font-weight: 500;
+}
+
+.event-register {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.event-register:before {
+    position: absolute;
+    background: rgba(53,67,78,.46)!important;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.event-register .event-register-content {
+    width: 90%;
+    height: auto;
+    position: inherit;
+}
+
+.event-register .form-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-register {
+    width: 631px;
+    max-width: 100%;
+    margin: 100px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 22px;
+}
+.form-register label{
+    font-weight: 500;
+}
+
+.btn-register-event{
+    border-radius: 33px;
+}

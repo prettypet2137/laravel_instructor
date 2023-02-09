@@ -1,0 +1,51 @@
+/*-----------------------------
+** Index-2 Area Start
+------------------------------*/
+
+.index2{
+    .hero-area{
+        padding: 185px 0px 118px;
+        overflow: visible;
+        .curve:before {
+            border-right: 50vw solid transparent;
+        }
+        .curve:after {
+            border-left: 50vw solid transparent;
+        }
+        .curve:after, .curve:before {
+            border-bottom: 300px solid #fff;
+        }
+        .right-img{
+            .img {
+                position: absolute;
+                top: 50px;
+                left: auto;
+                right: 30px;
+                max-width: 600px;
+                width: auto;
+                z-index: 9;
+            }
+        }
+    }
+    .whaybest .about-img{
+        padding: 0px;
+    }
+    .feature  .feature-circle{
+        display: none;
+    }
+
+    .dealofweek .deal-slider-area .content .left-area {
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .pricing .product-slider .item .single-product .img {
+        height: 250px;
+        display: flex;
+        img{
+            align-self: center;
+        }
+    }
+    .pricing .product-slider .item .single-product .img {
+        background: rgba(212, 63, 141, 0.1);
+    }
+}

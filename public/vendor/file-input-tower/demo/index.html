@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tower File Input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.3.92/css/materialdesignicons.min.css">
+    <link href="../dist/tower-file-input.css" rel="stylesheet" />
+
+    <style>
+        .mdi:before {
+            text-decoration: none;
+            /*Set the font size to be larger. Default size seems too small*/
+            font-size: 1.2em;
+            line-height: 0.75em;
+            vertical-align: -15%;
+        }
+
+        .highlight {
+            background: yellow;
+        }
+
+        pre code {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-2">
+        <div class="container">
+            <span class="navbar-brand">Tower File Input</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h3>Tower File Input</h3>
+
+        <p>
+            This is a simple jQuery plugin that works as a UI upgrade to the default HTML file input.
+        </p>
+
+        <div>
+            <h5>Live Demo</h5>
+            <p>
+                Try picking a single non-image file, multiple files, and a single image file.
+            </p>
+            <div class="tower-file">
+                <input type="file" id="mainDemoInput" multiple />
+
+                <label for="mainDemoInput" class="btn btn-info">
+                    <span class="mdi mdi-upload"></span>Select Files
+                </label>
+                <button type="button" class="btn btn-secondary tower-file-clear" title="Clear Selected Files">
+                    <span class="mdi mdi-cancel pr-1"></span>Clear Selected Files
+                </button>
+            </div>
+        </div>
+        <br />
+
+        <p>
+            <a href="examples.html">More Examples</a>
+        </p>
+
+        <hr />
+        <h5>Setup</h5>
+
+        <p>The most basic setup will look like this:</p>
+
+        <pre><code>&lt;div class=&quot;<span class="highlight">tower-file</span>&quot;&gt;
+    &lt;input type=&quot;file&quot; id=&quot;<span class="highlight">file1</span>&quot; /&gt;
+    &lt;label for=&quot;<span class="highlight">file1</span>&quot; class=&quot;tower-file-button&quot;&gt;
+        Select a File
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+
+        <p>
+            The input and the label must be in an element with the class <code>tower-file</code>.
+            The <code>id</code> attribute of the input and the <code>for</code> attribute of the label must match or clicking on the label will not trigger the input.
+            The class <code>tower-file-button</code> is just used for the default button style. 
+            It can be removed if you are using a different style.
+        </p>
+
+        <p>
+            You can add a a clear button by adding a button with the class <code>tower-file-clear</code>
+            inside the main element:
+        </p>
+
+        <pre><code>&lt;<span class="highlight">button</span> type=&quot;button&quot; <span class="highlight">class=&quot;tower-file-clear</span> tower-file-button&quot;&gt;
+    Clear
+&lt;/button&gt;</code></pre>
+
+        <hr />
+        <h5>Options</h5>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Option Name</th>
+                    <th>Default Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>fileList</td>
+                    <td>true</td>
+                    <td>Toggles showing the list of files if multiple files are selected.</td>
+                </tr>
+                <tr>
+                    <td>iconClass</td>
+                    <td>null</td>
+                    <td>
+                        The class that will be used in the span before the text in the label when a file is selected.
+                        If this is null the span element will not be generated.
+                    </td>
+                </tr>
+                <tr>
+                    <td>imgPreview</td>
+                    <td>true</td>
+                    <td>Toggles showing the preview image if a single image file is selected.</td>
+                </tr>
+                <tr>
+                    <td>imgPreviewClass</td>
+                    <td>null</td>
+                    <td>Set the class that will be added to the preview image.</td>
+                </tr>
+                <tr>
+                    <td>imgPreviewSelector</td>
+                    <td>null</td>
+                    <td>jQuery selector for a img element that will be used for the image preview instead of the default preview image.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="../src/tower-file-input.js"></script>
+    <script>
+        $('#mainDemoInput').fileInput({
+            iconClass: 'mdi mdi-fw mdi-upload'
+        });
+    </script>
+</body>
+</html>

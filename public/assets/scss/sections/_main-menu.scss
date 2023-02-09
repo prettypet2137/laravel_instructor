@@ -1,0 +1,136 @@
+/*---------------------------
+** Main Menu  Area Start
+---------------------------*/
+
+.navigation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid rgba(rgb(255, 255, 255), .20);
+  &.stiky-nav{
+    background: $white;
+    border-bottom: 0px;
+    border-bottom: 0px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    .navbar {
+      .navbar-brand{
+        img{
+          filter: unset;
+        }
+      }
+      #mainmenu{
+        ul{
+          .nav-item{
+            .nav-link{
+              color: $dark-color;
+              &::before{
+                @include main-gradint1;
+              }
+              
+              &:hover, &.active{
+                &::before{
+                  @include main-gradint1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+.navbar{
+  padding: 0px 0px 0px;
+  .navbar-brand{
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 700;
+    padding: 0px;
+    margin-top: -2px;
+    text-transform: uppercase;
+    color: $dark-color;
+    img{
+      max-width: 170px;
+      filter: brightness(0) invert(1);
+    }
+  }
+   #mainmenu{
+    ul{
+      .nav-item{
+        .nav-link{
+          color: #fff;
+          position: relative;
+          padding: 25px 10px 25px;
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 600;
+          &::before{
+            position: absolute;
+            content: " ";
+            width: 3px;
+            height: 3px;
+            left: 50%;
+            border-radius: 50px;
+            bottom: 0;
+            opacity: 0;
+            @include transform(translateX(-50%));
+            background: #fff;
+            @include transition(.5s);
+          }
+          
+          &:hover, &.active{
+            &::before{
+              position: absolute;
+              content: " ";
+              width: 70%;
+              height: 3px;
+              left: 50%;
+              @include transform(translate(-50%));
+              bottom: 0px;
+              opacity: 1;
+              background: #fff;
+            }
+          }
+        }
+        
+        &.dropdown:hover{
+          .dropdown-menu{
+            display: block;
+            padding: 0px;
+            margin-top: 0px;
+            border: 0px;
+            border-radius: 0px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+            .dropdown-item{
+              background: #fff;
+              padding: 8px 15px;
+              font-size: 15px;
+              line-height: 25px;
+              font-weight: 600;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              transition: $transition;
+              i{
+                font-size: 13px;
+                margin-right: 4px;
+              }
+              &:hover{
+               background: $base-color2;
+                color: #fff;
+              }
+              &:last-child{
+                border-bottom: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+
+
+/*---------------------------
+** Main Menu Area End
+---------------------------*/

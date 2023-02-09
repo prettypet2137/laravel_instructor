@@ -1,0 +1,568 @@
+
+
+@media only screen and (max-width: 1199px){
+    .footer .copy-bg {
+        margin-top: 110px;
+    }
+    .hero-area .left-content .content .title {
+        font-size: 48px;
+        line-height: 58px;
+    } 
+    .hero-area {
+        padding: 345px 0px 272px;
+    }
+    .about .right-shape {
+        right: -240px;
+    }
+    .about .left-shape {
+        left: -240px;
+    }
+    .faq .right-shape {
+        right: -240px;
+    
+    }
+    .feature .feature-box .feature-circle{
+        display: none;
+    }
+    .video .fun-box .inner-content3 {
+        margin-top: 0px;
+    }
+    .contact {
+        padding: 90px 0px 100px;
+    }
+    .hero-area .right-img .img {
+        left: 40px;
+    }
+    .whybest .box{
+        margin-bottom: 30px;
+    }
+    .whybest {
+        padding: 85px 0px 60px;
+    }
+    .about .round-shape{
+        display: none;
+    }
+    .whaybest .info .info-title,
+    .section-title .title
+     {
+        font-size: 34px;
+        line-height: 43px;
+    }
+    .hero-area .right-img .img {
+        max-width: 350px;
+    }
+    .discount-circle-inner {
+        width: 90px;
+        height: 90px;
+    }
+    .discount-circle-inner::before {
+        width: 110px;
+        height: 110px;
+    }
+    .hero-area .right-img .discount-circle {
+        left: 50px;
+        top: -87px;
+    }
+    .whaybest .about-img {
+        padding: 0px 60px;
+    }
+    .feature .feature-box .details .title,
+    .dealofweek .deal-slider-area .content .right-area .name,
+    .about .box .inner-box .title,
+    .whaybest .feature-list li .content h4
+    {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .dealofweek .deal-slider-area .content .right-area .deal-counter span {
+        padding: 5px 14px;
+        font-size: 20px;
+        line-height: 24px;
+        
+     }
+     .dealofweek .deal-slider-area .content .right-area .price p span,
+     .pricing .product-slider .item .single-product .content .price .new-price
+      {
+        font-size: 26px;
+    }
+    /* index 2  Start*/
+    .index2 .hero-area .curve::after, .index2 .hero-area .curve::before {
+        border-bottom: 200px solid #fff;
+    }
+    .index2 .hero-area .right-img .img {
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .footer-widget.support-link-widget {
+        margin-top: 18px;
+    }
+    .footer-widget.footer-widget.twitter-widget {
+        margin-top: 18px;
+    }
+    .footer .copy-bg {
+        margin-top: 100px;
+    }
+    .animateme{
+		transform: none !important;
+		opacity: 1 !important;
+    }
+    .whybest {
+        padding: 85px 0px 70px;
+    }
+    .about .about-img{
+        margin-bottom: 40px;
+    }
+
+    .about .row-one {
+        padding-bottom: 94px;
+        margin-bottom: 100px;;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    }
+    .about .left-shape {
+        bottom: 280px;
+    }
+    .hero-area .right-img .img {
+        position: relative;
+        animation: none;
+    
+    }
+    .navigation .navbar {
+        padding: 5px 15px;
+    }
+    
+    .navigation .navbar #mainmenu ul li a {
+        padding: 10px 10px 10px!important;
+        display: inline-block;
+    }
+    .navbar #mainmenu ul li a.active::after {
+        bottom: 6px;
+    }
+    .hero-area .right-img .img {
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+    }
+    .hero-area {
+        padding: 188px 0px 123px;
+    }
+    .hero-area .right-img .discount-circle {
+        left: 150px;
+        top: 70px;
+    }
+    .hero-area .right-img .img{
+        margin-bottom: 50px;
+    }
+    .center-feature {
+        margin: 5px 0px 34px;
+    }
+    .video .fun-box .inner-content1{
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .faq .faq-img {
+        margin-top: 30px;
+    }
+    .navigation .navbar .navbar-brand img {
+        filter: unset;
+    }
+
+    .navigation{
+        background: #fff;
+    }
+    .navigation .navbar #mainmenu ul .nav-item .nav-link {
+        color: #242424;
+      }
+      
+      .navigation .navbar #mainmenu ul .nav-item .nav-link::before {
+        background-image: -webkit-linear-gradient(35deg, #0250c5 0%, #d43f8d 100%);
+        background-image: -o-linear-gradient(35deg, #0250c5 0%, #d43f8d 100%);
+        background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+      }
+      
+      .navigation .navbar #mainmenu ul .nav-item .nav-link:hover::before, 
+      .navigation .navbar #mainmenu ul .nav-item .nav-link.active::before {
+        background-image: -webkit-linear-gradient(35deg, #0250c5 0%, #d43f8d 100%);
+        background-image: -o-linear-gradient(35deg, #0250c5 0%, #d43f8d 100%);
+        background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+      }
+
+      .home5 .navigation .navbar #mainmenu ul .nav-item .nav-link::before {
+        background: #D31027; 
+        background: -webkit-linear-gradient(to right, #EA384D, #D31027); 
+        background: linear-gradient(to right, #EA384D, #D31027); 
+      }
+      
+      .home5 .navigation .navbar #mainmenu ul .nav-item .nav-link:hover::before, 
+      .home5 .navigation .navbar #mainmenu ul .nav-item .nav-link.active::before {
+        background: #D31027; 
+        background: -webkit-linear-gradient(to right, #EA384D, #D31027); 
+        background: linear-gradient(to right, #EA384D, #D31027); 
+      }
+
+      #mainmenu ul.navbar-nav{
+          height: 250px;
+          overflow: auto;
+      }
+
+      .about .box{
+          margin-bottom: 30px;
+      }
+      .whaybest .about-img img{
+          animation: unset;
+          max-width: 350px;
+          display: inline-block;
+          margin-bottom: 42px;
+      }
+      .center-feature img{
+        max-width: 350px; 
+        margin: 14px 0px 14px;
+      }
+      .feature .left-feature .feature-box .icon{
+          margin-right: 0px;
+      }
+      .whaybest .about-img{
+          text-align: center;
+          width: 100%;
+          padding: 0px;
+      }
+      .whaybest {
+        padding: 120px 0px 97px;
+    }
+    .whaybest .feature-list {
+        margin-top: 50px;
+    }
+    .whaybest .feature-list li {
+        margin-bottom: 22px;
+    }
+    .whaybest .row-one {
+        margin-bottom: 77px;
+    }
+    .feature .section-title {
+        margin-bottom: 54px;
+    }
+    .feature {
+        padding: 100px 0px 88px;
+    }
+    .dealofweek .deal-slider-area .content .left-area img{
+        margin-bottom: 50px;
+    }
+    .pricing .product-slider .item .single-product .img img{
+        max-width: 220px;
+    }
+    .faq .section-title.extra .title{
+        margin-bottom: 18px;
+    }
+    .faq {
+        padding: 100px 0px 100px;
+    }
+    .contact {
+        padding: 100px 0px 100px;
+    }
+    .dealofweek .deal-slider-area .content .right-area{
+        text-align: center;
+    }
+    /* Index 2 start */
+    .index2 .hero-area .curve::after, .index2 .hero-area .curve::before {
+        border-bottom: 80px solid #fff;
+    }
+    .index2 .hero-area .right-img .img {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        max-width: 450px;
+        width: auto;
+    }
+    .index2 .hero-area {
+        padding: 189px 0px 122px;
+    }
+    .google_map_wrapper{
+        margin-top: 30px;
+    }
+    .breadcrumb-area {
+        padding: 112px 0px 64px;
+      }
+      .breadcrumb-area .title {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      .categori-widget{
+          margin-top: 30px;
+      }
+
+      .home5 .hero-area::before,
+      .home5 .whaybest::before,
+      .home5 .dealofweek::before,
+      .home5 .video::before,
+      .home5 .testimonial-area::before,
+      .home5 .faq::before
+      {
+          border-radius: 0px;
+      }
+      .home9 .hero-area .right-img {
+        padding: 0px 190px;
+        margin-bottom: 50px;
+    }
+    .home9 .hero-area .right-img::after {
+        width: 190px;
+        height: 190px;
+    }
+    .home9 .hero-area .right-img .img{
+        margin-bottom: 0px;
+    }
+    .home9 .hero-area {
+        padding: 178px 0px 120px;
+    }
+    .home9 .hero-area .left-content .content .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .curve::after, .curve::before {
+        border-bottom: 50px solid #fff;
+    }
+    .curve.curve-top::after, .curve.curve-top::before {
+        border-top: 50px solid #fff;
+    }
+    .footer .copy-bg {
+        margin-top: 96px;
+    }
+
+    .hero-area .right-img .discount-circle {
+        left: 60px;
+        top: 70px;
+    }
+    .hero-area .left-content .content .title {
+        font-size: 54px;
+        line-height: 64px;
+    }
+    .center-feature img,
+    .whaybest .about-img img,
+    .hero-area .right-img .img,
+    .dealofweek .deal-slider-area .content .left-area img
+    {
+        max-width: 250px;
+        width: 100%;
+    }
+    
+    .footer-widget.use-full-link-widget{
+        margin-top: 18px;
+    }
+    /* Index 2 start */
+    .index2 .center-feature img, 
+    .index2 .whaybest .about-img img, 
+    .index2 .hero-area .right-img .img, 
+    .index2 .dealofweek .deal-slider-area .content .left-area img {
+        max-width: 100%;
+        width: auto;
+    }
+    .index2 .pricing .product-slider .item .single-product .img img {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .index2 .pricing .product-slider .item .single-product .img{
+        text-align: center;
+        padding: 0px 30px;
+    }
+    .home9 .hero-area .right-img {
+        padding: 0px 101px;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .hero-area .left-content .content .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .section-title .title,
+    .about .info .info-title,
+    .whaybest .info .info-title, .section-title .title
+    {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .whybest .box .inner-box .title,
+    .feature .feature-box .details .title,
+    .video .fun-box .inner-content .categori,
+    .pricing .product-slider .item .single-product .content .title,
+    
+    .comment-area .title,
+    .write-comment .title,
+    .categori-widget .title,
+    .latest-post-widget .title,
+    .newsletter-widget .title,
+    .single-blog-details .content .title
+    {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .pricing .product-slider .item .single-product .content .price .new-price,
+    .dealofweek .deal-slider-area .content .right-area .price p span,
+    .single-feature .title,
+    .single-how-it-work .title,
+    .breadcrumb-area .title
+    {
+        font-size: 24px;
+        line-height: 34px;
+    }  
+    .home9 .hero-area .right-img {
+        padding: 0px 101px;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .hero-area .right-img {
+        padding: 0px 50px;
+    }
+    .discount-circle-inner {
+        height: 70px;
+        width: 70px;
+    }
+    .discount-circle-inner::before {
+        width: 85px;
+        height: 85px;
+    }
+    .hero-area .right-img .discount-circle .discount-circle-inner .price {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .hero-area .right-img .discount-circle .discount-circle-inner .price span {
+        font-size: 14px;
+        line-height: 13px;
+    }
+    .discount-circle-inner::after {
+        border: 2px dashed #fff;
+    }
+    .testimonial-area .right-shape3 {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .contact .info-contact li .info-box .left .icon {
+        font-size: 24px;
+    }
+    .about .about-img,
+    .center-feature
+    {
+        padding: 0px 30px;
+    }
+    .home9 .hero-area .right-img {
+        padding: 0px 80px;
+    }
+}
+
+
+@media only screen and (max-width: 414px) {
+    .whaybest .feature-list li{
+        max-width: 100%;
+        flex: 100%;
+    }
+    .hero-area {
+        padding: 160px 0px 94px;
+    }
+    .hero-area .left-content .content .title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .hero-area .right-img {
+        padding: 0px 30px;
+    }
+    .section-title .title, 
+    .about .info .info-title,
+    .whaybest .info .info-title, .section-title .title
+    {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .footer .fotter-social-links ul li a {
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .about .box .inner-box .icon {
+        font-size: 46px;
+    }
+    .subscribe-section .newsletter-form-area button span{
+        display: none;
+    }
+    .comment-area .comment-box-area li .comment-box.replay-comment {
+        margin-left: 30px;
+      }
+      
+      .comment-area .comment-box-area li .comment-box .left{
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      .comment-area .comment-box-area li .comment-box .right{
+        margin-left: 0px;
+      }
+      .custom-control.custom-checkbox.d-flex{
+          display: block!important;
+      }
+      .custom-control.custom-checkbox.d-flex span,
+      .custom-control.custom-checkbox.d-flex a
+      {
+          display: block;
+      }
+      .home9 .hero-area .right-img {
+        padding: 0px 30px;
+    }
+    .home9 .hero-area .left-content .content .title {
+        font-size: 34px;
+        line-height: 44px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .contact .info-contact li .info-box{
+        display: flow-root;
+        text-align: center;
+    }
+    .contact .info-contact li .info-box .right{
+        justify-content: center;
+    }
+    .contact .info-contact li .info-box .left {
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .dealofweek .deal-slider-area {
+        padding: 30px 15px 30px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .hero-area .right-img {
+        padding: 0px 0px;
+    }
+    .about .about-img,
+    .center-feature
+     {
+        padding: 0px 0px;
+    }
+    .testimonial-area .testimonial-slider .client {
+        margin: 65px 15px 65px;
+        padding: 85px 20px 27px;
+    }
+    .dealofweek .deal-slider-area .content .left-area {
+        text-align: center;
+        padding: 0px 30px;
+    }
+    .home9 .hero-area .right-img {
+        padding: 0px 20px;
+    }
+    .home9 .hero-area .right-img::after {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+

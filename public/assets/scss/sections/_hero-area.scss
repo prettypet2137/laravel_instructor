@@ -1,0 +1,79 @@
+/*-----------------------------
+** Hero Area Start
+------------------------------*/
+
+.hero-area {
+  position: relative;
+  padding: 365px 0px 291px;
+  background: url(../images/heroarea.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .bgimg{
+    position: absolute;
+    bottom: 0%;
+    width: auto;
+  }
+  .left-content{
+    .content {
+       .title {
+         font-size: 56px;
+         line-height: 66px;
+         color: #fff;
+         font-weight: 700;
+       }
+       .subtitle {
+         font-size: 18px;
+         line-height: 28px;
+         color: #ffff;
+         margin-top: 26px;
+       }
+       .links {
+         margin-top: 42px;
+         padding-right: 15px;
+         a{
+         margin-left: 0px;
+         }
+       }
+       }
+  }
+  .right-img{
+    text-align: center;
+    position: relative;
+    .discount-circle{
+      position: absolute;
+      left: 80px;
+      top: -30px;
+      z-index: 96;
+      .discount-circle-inner{
+        text-align: center;
+        .price{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 28px;
+          font-weight: 600;
+          color: #fff;
+          line-height: 30px;
+          text-align: center;
+          span{
+            display: block;
+            margin-top: 0px;
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+        
+      }
+    }
+    .img{
+      position: absolute;
+      top: -95px;
+      left: 100px;
+      max-width: 380px;
+      width: auto;
+      animation: shapeani3 5s linear infinite;
+    }
+  }
+}

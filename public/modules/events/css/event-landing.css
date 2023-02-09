@@ -1,0 +1,135 @@
+/* https://www.ingridkuhn.com/themes/doggo/index2.php */
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+.main-1{
+    /* background-image: url("images/firstbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:fixed ;
+  background-size: cover; */
+    /* height: 100vh; */
+    /* position:relative ; */
+    background-color: #3EA0D3;
+    top: 0%;
+    width: 100%;
+}
+.main-heading1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color:  #3EA0D3;
+    font-size: 36px;
+
+}
+.main-heading3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    /* color: #043775; */
+    font-size: 35px;
+}
+.borderrow-green{
+    border-right: 5px solid green;
+    border-bottom: 2px solid grey;
+}
+.borderrow-blue{
+    border-right: 5px solid blue;
+    border-bottom: 2px solid grey;
+}
+.borderrow-red{
+    border-right: 5px solid red;
+    border-bottom: 2px solid grey;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-blue{
+    background-color: blue;
+}
+.bg-red{
+    background-color: red;
+}
+.main-2{
+    background-color: #2394CE;
+    border-left: 5px solid #183f52;;
+    border-right: 5px solid #183f52;;
+    /* position:relative ; */
+    /* top: 0%; */
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+
+
+.main-heading2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+
+    font-size: 25px;
+}
+.main-heading12{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+
+    font-size: 20px;
+}
+.main-heading3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    /* color: #043775; */
+    font-size: 44px;
+}
+.main-heading4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #043775;
+    font-size: 20px;
+}
+.fontp{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color:grey;
+    font-size: 14px;
+}
+.fontp-wp{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color:#989EA1;
+    font-size: 18px;
+
+}
+.fontt{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #F8AE4F;
+    font-size: 14px;
+}
+.font-16{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    /* color: #F8AE4F;; */
+    font-size: 16px;
+}
+.font-21{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    /* color: #F8AE4F;; */
+    font-size: 25px;
+}
+.call-img{
+    border: 9px solid white;
+}
+.font-nunito{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+
+}
+
+.input-contact{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
+}

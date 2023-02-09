@@ -1,0 +1,93 @@
+/* Signin Area Start */
+.auth{
+    padding: 120px 0px 120px;
+    .sign-form{
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        padding: 33px 30px 40px;
+        .heading{
+            text-align: center;
+            margin-bottom: 26px;
+            .title{
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 34px;
+                margin-bottom: 0px;
+            }
+            .subtitle{
+                font-size: 16px;
+                line-height: 26px;
+                
+            }
+        }
+        .form-control{
+            margin-bottom: 15px;
+            height: 50px;
+            padding: 0px 20px;
+            font-size: 14px;
+        }
+        .custom-checkbox{
+            margin-top: 25px;
+            font-size: 14px;
+            line-height: 24px;
+            .custom-control-label{
+                a{
+                    color: $base-color;
+                }
+            }
+        }
+        .base-btn1{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            padding: 0px;
+            border-radius: 4px;
+            margin-top: 27px;
+            margin-bottom: 25px;
+        }
+        .reg-text{
+            font-size: 14px;
+            a{
+                font-weight: 600;
+                transition: $transition;
+                &:hover{
+                    color: $base-color;
+                }
+            }
+        }
+    }
+}
+.bigbtn{
+    width: 100%;
+    background: $base-color;
+    border: 0px;
+    cursor: pointer;
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    transition: $transition;
+    &:hover{
+        background: $base-color2;
+    }
+}
+.h-100v{
+    height: 100vh!important;
+}
+/* Signin Area End */
+
+/* 404 Area Start */
+.error-404{
+    .base-btn1{
+        margin-top: 30px;
+    }
+}
+
+
+
+
+/* 404 Area End */

@@ -1,0 +1,92 @@
+/*-----------------------------
+** FAQ Area Start
+------------------------------*/
+
+.faq{
+  padding: 110px 0px 100px;
+  position: relative;
+  background: #F7F9FF;
+  .right-shape{
+    position: absolute;
+    right: 0;
+    top: 350px;
+  }
+  .accordion{
+    .panel{
+      margin-bottom: 20px;
+      background: $white;
+      border-radius: 3px;
+      box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.10);
+      position: relative;
+      &::after{
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 4px;
+        @include main-gradint1;
+      }
+      .panel-body{
+        padding: 4px 20px 7px;
+      }
+    }
+    .panel-title{
+      display: block;
+      width: 100%;
+      background: $white;    
+      padding: 15px 40px 15px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 0px;
+      color: $dark-color;
+      position: relative;
+      border-radius: 3px;
+      cursor: pointer;
+      &::after{
+        position: absolute;
+        content: "";
+        width: 40px;
+        height:100%;
+        border-radius: 3px 0px 0px 3px;
+        right: 0;
+        top: 0;
+        text-align: center;
+      }
+      &::before{
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        content: "\f067";
+        right: 0;
+        top: 50%;
+        @include transform(translateY(-50%));
+        width: 40px;
+        text-align: center;
+        z-index: 1;
+        font-size: 12px;
+        @include transition();
+        width: 22px;
+        height: 22px;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        line-height: 22px;
+        border-radius: 50%;
+        color: #555;
+        margin-right: 10px;
+      }
+      &[aria-expanded="true"]{
+        &::before{
+        font-family: "Font Awesome 5 Free";
+        content: "\f068";
+        }
+      }
+    }
+  }
+ 
+.faq-img{
+  align-self: center;
+}
+
+}
+
+
+

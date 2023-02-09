@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/saas",
+    "description": "",
+    "authors": [
+        {
+            "name": "Tuong Nguyen",
+            "email": "tuongnguyendev@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Saas\\Providers\\SaasServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Saas\\": ""
+        }
+    }
+}
